@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="a-intro">
         <span className="a-eyebrow">About</span>
         <h1>Independent by design</h1>
-        <p>Anvaya helps people read Indian public policy by connecting every explanation to the official text. It is a student project for Yale School of Management’s MGT 409, AI Foundations for Managers.</p>
+        <p>Indian laws and policies are public, but they are written in dense legal language that most citizens cannot read. Anvaya explains how a policy affects the people it governs, and connects every explanation to the official text so it can be checked. It is a student project for Yale School of Management’s MGT 409, AI Foundations for Managers.</p>
       </section>
 
       <div className="a-doc-page">

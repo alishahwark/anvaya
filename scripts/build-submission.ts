@@ -31,6 +31,7 @@ const unit = read("data/benchmarks/unit-test-run.json");
 const unitTests: number = unit.numPassedTests;
 if (unit.numFailedTests > 0) throw new Error("Unit tests are failing; refusing to build the submission documents.");
 const E2E_TESTS = 38; // from the last full Playwright run with RUN_LIVE_AI=1 (see README); update if the suite changes
+const leg = read("data/benchmarks/legalese-stats.json");
 const comparators = read("data/benchmarks/comparators.json") as Record<string, any>;
 const comparatorCount = Object.keys(comparators).length;
 
@@ -69,7 +70,7 @@ const checkedOn = verification.checkedAt.slice(0, 10);
 const trace = (id: string) => [...devResults, ...holdResults].find((row) => row.id === id);
 const fmtDate = (iso: string) => new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
-const AUTHOR = "Alishahwar Kichloo";
+const AUTHOR = "Ali Shahwar Kichloo";
 const EMAIL = "alishahwar.kichloo@yale.edu";
 const REPO = "https://github.com/alishahwark/anvaya";
 const CLONE = `git clone ${REPO}.git && cd anvaya && cp .env.example .env && npm install && npm run setup && npm run dev`;
@@ -111,6 +112,32 @@ ${box(610, 282, 175, 84, "D Verified record", ["stage from the register", "every
 ${box(810, 282, 160, 84, "E Analysis + Q&A", ["brief, changes, who", "is affected; each", "statement checked"], "#e7eee8", "#267c76")}
 ${arrow(185, 324, 210, 324)}${arrow(385, 324, 410, 324)}${arrow(585, 324, 610, 324)}${arrow(785, 324, 810, 324)}
 <text x="10" y="404" class="s">Fixed pipeline with scoped roles. The model does not choose tools or fetch anything; all fetching is done by code against an allowlist.</text>
+</svg>`;
+
+
+// Slide version: fewer words, larger type, so it stays readable when projected.
+const sbox = (x: number, y: number, w: number, title: string, line: string, fill = "#ffffff", stroke = "#b9c6bd") =>
+  `<g><rect x="${x}" y="${y}" width="${w}" height="104" rx="14" fill="${fill}" stroke="${stroke}" stroke-width="2"/><text x="${x + w / 2}" y="${y + 42}" text-anchor="middle" class="st">${title}</text><text x="${x + w / 2}" y="${y + 74}" text-anchor="middle" class="ss">${line}</text></g>`;
+const sarrow = (x: number, y: number) => `<path d="M${x} ${y} L${x + 26} ${y}" stroke="#267c76" stroke-width="3" fill="none" marker-end="url(#sarr)"/>`;
+const slideDiagram = `
+<svg viewBox="0 0 1120 470" role="img" aria-label="Anvaya pipeline: question path and research path">
+<defs><marker id="sarr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#267c76"/></marker>
+<style>.st{font:600 21px Inter,sans-serif;fill:#102e3c}.ss{font:400 16px Inter,sans-serif;fill:#50655f}.sh{font:700 15px Inter,sans-serif;fill:#8d531c;letter-spacing:.1em}</style></defs>
+<text x="0" y="22" class="sh">EVERY QUESTION</text>
+${sbox(0, 36, 196, "Resolver", "code, no AI", "#f0eee4")}${sarrow(196, 88)}
+${sbox(224, 36, 196, "Retrieval", "one policy only", "#f0eee4")}${sarrow(420, 88)}
+${sbox(448, 36, 216, "Answer agent", "cites passage ids", "#e7eee8", "#267c76")}${sarrow(664, 88)}
+${sbox(692, 36, 216, "Check agent", "2nd AI call", "#e7eee8", "#267c76")}${sarrow(908, 88)}
+${sbox(936, 36, 184, "Answer", "quotes + checks", "#fbeedd", "#d38b45")}
+<text x="0" y="196" class="sh">A POLICY NOT YET IN THE REGISTER</text>
+${sbox(0, 210, 196, "Search", "Sansad + India Code", "#f0eee4")}${sarrow(196, 262)}
+${sbox(224, 210, 196, "Fetch", "every version", "#f0eee4")}${sarrow(420, 262)}
+${sbox(448, 210, 216, "Verify", "code, no AI", "#f0eee4")}${sarrow(664, 262)}
+${sbox(692, 210, 216, "Record", "every check shown", "#fbeedd", "#d38b45")}${sarrow(908, 262)}
+${sbox(936, 210, 184, "Explain", "plain language", "#e7eee8", "#267c76")}
+<rect x="0" y="352" width="1120" height="96" rx="14" fill="#102e3c"/>
+<text x="560" y="392" text-anchor="middle" style="font:600 20px Inter,sans-serif;fill:#fff">The model never fetches or chooses tools. Code does.</text>
+<text x="560" y="424" text-anchor="middle" style="font:400 16px Inter,sans-serif;fill:#cfe0da">Status is computed from Gazette dates · every quote is checked against the PDF · fetched text is data, never orders</text>
 </svg>`;
 
 // ───────────── Shared figure helper ─────────────
@@ -182,8 +209,9 @@ svg{width:100%;height:auto;display:block}
 <header>
 <p class="kicker">Yale SOM · MGT 409 AI Foundations for Managers · Fall 2026 · Final project (solo)</p>
 <h1>Anvaya <span style="color:var(--saffron)">·</span> अन्वय</h1>
-<p class="lede" style="margin-top:6pt">Understand the policies shaping India. An independent, evidence-first policy research assistant that finds the official documents, explains them in plain language, and shows the exact passage behind every claim.</p>
+<p class="lede" style="margin-top:6pt">Understand the policies shaping India. Indian laws and policy documents are public but written in dense, archaic legal language that most citizens cannot read. Anvaya is an independent, evidence-first assistant that finds the official documents, explains in plain language how a policy affects the reader, and shows the exact passage behind every claim.</p>
 <p class="meta">${AUTHOR} · ${EMAIL} · ${BUILT}</p>
+<p style="margin:8pt 0 0;padding:6pt 10pt;background:var(--mist);border-left:4px solid var(--saffron);font-size:10.5pt"><b>GitHub repository (public):</b> <a href="${REPO}">${REPO}</a></p>
 </header>
 
 <h2>1. Title + Links</h2>
@@ -193,17 +221,26 @@ svg{width:100%;height:auto;display:block}
 <tr><th>Hosted demo</th><td>None. The app is run locally from the repository.</td></tr>
 <tr><th>Also in the repo</th><td><code>README.md</code>, <code>.env.example</code>, <code>report.html</code>, <code>slides.html</code>, <code>docs/SCORING_METHODOLOGY.md</code>, <code>docs/IMPLEMENTATION_GAP_REGISTER.md</code>, <code>data/benchmarks/</code> (questions, raw results), <code>docs/screenshots/final/</code></td></tr>
 </table>
-<p>Anvaya answers one kind of question well: <em>what does this law say, is it in force, and what does it mean for me?</em> Its flagship is India’s Digital Personal Data Protection (DPDP) Act, 2023, which is being switched on in three steps (13 November 2025, 13 November 2026, 13 May 2027). Every statement on the policy page is tied to a verbatim quote from the official PDF, a script checks each quote against the PDF text, legal status is computed from the Gazette dates by code, and AI is used only to answer a reader’s own questions, from retrieved official text, with a second AI pass that checks each sentence. A reader can also ask for any bill or Act by name, or paste a link to an official document. A verification engine then searches Parliament’s register and India Code, downloads every official version, runs a list of explicit checks (shown to the reader, each with its source), and only then explains the document in the same way.</p>
+<p>Anvaya answers one kind of question: <em>what does this law say, is it in force, and what does it mean for me?</em> A reader can ask for any bill or Act by name, or paste a link to an official document. A verification engine searches Parliament’s register and India Code, downloads every official version, runs a list of explicit checks (shown to the reader, each with its source), and only then explains the document in plain language, with each statement tied to a verbatim quote and page of the official text. Legal status is computed from the Gazette dates by code, and AI is used only to explain a document and to answer a reader’s own questions from retrieved official text, with a second AI pass that checks each sentence. ${verifs.length} bills and Acts are already in the register. One of them, India’s Digital Personal Data Protection (DPDP) Act, 2023, was reviewed claim by claim and is used throughout this report as a worked example, because it is being switched on in three steps (13 November 2025, 13 November 2026, 13 May 2027) and shows why status has to be computed.</p>
 <div class="big">
 <div><b>${verification.supported}/${verification.totalRefs}</b><span>evidence quotes found on the stated page of the official PDF (checked ${checkedOn})</span></div>
 <div><b>${dev.passed}/${dev.questions} · ${hold.passed}/${hold.questions}</b><span>strict-assertion pass, development set · held-out set (model ${dev.model})</span></div>
 <div><b>${inj.summary.passed}/${inj.summary.attacks}</b><span>indirect prompt-injection attacks resisted; none cited</span></div>
 <div><b>${unitTests} + ${E2E_TESTS}</b><span>unit tests + browser tests on a production build, all passing (one live-link test needed a retry after a transient download error from the source site)</span></div>
 </div>
-${fig("02-dpdp-top", "Figure 1. The DPDP policy page: one plain status (“Partly in force”), a plain-language brief, and a three-step tracker computed from today’s date.", "style=\"width:58%;margin-inline:auto\"")}
+${fig("02-dpdp-top", "Figure 1. A policy page (the DPDP Act, our worked example): one plain status (“Partly in force”), a plain-language brief, and a three-step tracker computed from today’s date.", "style=\"width:58%;margin-inline:auto\"")}
 
 <h2>2. Motivation</h2>
-<h3>The problem</h3>
+<h3>The problem: the law is public, but not readable</h3>
+<p>Indian Acts, rules and Gazette notifications are published, but they are written in a drafting style that ordinary citizens cannot read: very long sentences, nested cross-references to other Acts, amendments written as substitutions (“for the word X, substitute Y”), and the real detail deferred to rules “as may be prescribed”. The people a law governs (a shopkeeper who holds customer data, a student, a gig worker) rarely read the source. They rely on press summaries and word of mouth, which can be wrong or out of date, so the rules that shape their lives stay out of reach. Anvaya was built on one belief: <b>a citizen should be able to understand how a policy affects them</b>, and should be able to check the explanation against the official text in one click.</p>
+<p><b>How hard is the text? Measured on the documents in the register.</b> Using the Flesch–Kincaid grade formula (a rough proxy for reading difficulty, not a comprehension test) on the ${leg.documents} stored documents with at least 100 sentences:</p>
+<table class="keep">
+<tr><th></th><th class="n">Median sentence length (words)</th><th class="n">Flesch–Kincaid grade</th></tr>
+<tr><td>Official text (${leg.documents} documents, range of grades ${one(leg.legal.min)}–${one(leg.legal.max)})</td><td class="n">${one(leg.legal.medianWordsPerSentence)}</td><td class="n">${one(leg.legal.medianFk)}</td></tr>
+<tr><td>Anvaya’s plain-language briefs and change summaries (${leg.anvayaBriefs.n} documents)</td><td class="n">${one(leg.anvayaBriefs.medianWordsPerSentence)}</td><td class="n">${one(leg.anvayaBriefs.medianFk)}</td></tr>
+</table>
+<p>Two honest readings. First, the difficulty is mostly structure, not old words: archaic terms such as “notwithstanding”, “hereinafter” and “thereof” appear only about ${one(leg.legal.medianArchaicPer1000)} times per 1,000 words, while ${one(leg.legal.medianDelegatingPer1000)} per 1,000 words defer detail to later rules or notifications, which a reader cannot see in the Act at all. Second, Anvaya’s text is shorter-sentenced (about ${Math.round(leg.legal.medianWordsPerSentence / leg.anvayaBriefs.medianWordsPerSentence * 10) / 10} times shorter) but still scores at college level on this formula, so it is clearer, not yet plain. We did not test comprehension with readers.</p>
+<h3>A worked example</h3>
 <p>A small-business owner asks: <em>“Does the DPDP Act apply to me, and when?”</em> The honest answer needs five official documents that sit in separate Gazette PDFs: the Act (assented 11 August 2023), a commencement notification (13 November 2025) that switches on different sections on three different dates, the Rules (13 November 2025) with their <em>own</em> three-date schedule, a corrigendum to the Rules (11 December 2025), and a Removal of Difficulties Order (published 6 October 2026, nineteen days before this report). While building Anvaya the first version of the app held three of these. Searching the web also showed that secondary sources disagree on the exact day the main duties start (13 or 14 May 2027) and that the press reported, without any official notification, that the Government might shorten the 18-month wait. A reader cannot sort that out without reading Gazette PDFs.</p>
 <h3>Who it is for</h3>
 <table>
@@ -419,6 +456,7 @@ html,body{background:var(--ivory)}
 .reveal td.n,.reveal th.n{text-align:right}
 code{font:.8em ui-monospace,Menlo,monospace;background:var(--mist);padding:1px 6px;border-radius:4px}
 .hero{background:var(--navy);color:#fff;border-radius:0}
+section[data-background-color] code{background:rgba(255,255,255,.16);color:#fff}
 .reveal .hero h1,.reveal .hero p{color:#fff}
 .reveal .progress{color:var(--saffron)}
 .reveal .controls{color:var(--teal)}
@@ -430,25 +468,25 @@ svg{width:100%;height:auto}
 <section data-background-color="#102e3c">
 <p class="kicker" style="color:#f0c18b">Yale SOM · MGT 409 · Final project</p>
 <h1 style="color:#fff;font-size:3.3em;max-width:12em">Understand the policies shaping India.</h1>
-<p style="color:#dbe7e1;max-width:22em">Anvaya finds the official text, explains it in plain language, and shows the exact passage behind every claim.</p>
-<p class="small" style="color:#a9c1b7;margin-top:1.6em">${AUTHOR} · ${EMAIL}<br>Code: ${REPO} (public) · run it locally in under 10 minutes</p>
+<p style="color:#dbe7e1;max-width:24em">Indian policy documents are written to be hard to read. Anvaya explains how a policy affects the citizen, in plain language, and shows the exact passage behind every claim.</p>
+<p style="color:#fff;font-size:.85em;margin-top:1.4em;padding:10px 16px;border-left:5px solid #d38b45;background:rgba(255,255,255,.08);display:inline-block"><b>GitHub (public):</b> <a href="${REPO}" style="color:#f0c18b">${REPO}</a></p>
+<p class="small" style="color:#a9c1b7;margin-top:1em">${AUTHOR} · ${EMAIL} · run it locally in under 10 minutes</p>
 </section>
 
 <section>
 <p class="kicker">The problem</p>
-<h2>One law, five documents, three start dates</h2>
+<h2>The law is public, but written to be unreadable</h2>
 <div class="cols">
 <div>
 <ul>
-<li><b>Act</b> · assent 11 Aug 2023</li>
-<li><b>Commencement notification</b> · 13 Nov 2025, three dates</li>
-<li><b>Rules</b> · own schedule, same three dates</li>
-<li><b>Corrigendum</b> · 11 Dec 2025</li>
-<li><b>Removal of Difficulties Order</b> · 6 Oct 2026</li>
+<li>Median sentence in the official texts: <b>${one(leg.legal.medianWordsPerSentence)} words</b></li>
+<li>Reading grade (Flesch–Kincaid): <b>${one(leg.legal.medianFk)}</b> vs <b>${one(leg.anvayaBriefs.medianFk)}</b> for Anvaya’s summaries</li>
+<li>Detail left to future rules: “as may be prescribed”</li>
+<li>Citizens rely on press summaries that may be wrong</li>
 </ul>
-<p class="muted small" style="margin-top:1em">Secondary sources disagree on the exact day (13 or 14 May 2027) and press reports of a shorter timeline are unconfirmed. Readers cannot sort that out from Gazette PDFs.</p>
+<p class="muted small" style="margin-top:1em">Measured on ${leg.documents} stored documents; a rough proxy, not a comprehension test. Example: the DPDP Act is five documents with three start dates, and sources disagree on the exact day.</p>
 </div>
-<div class="card"><b>“Does the DPDP Act apply to my small business, and when?”</b><p class="muted">A chatbot answers from memory. A search engine returns pages. Neither shows which page of which Gazette supports the sentence.</p></div>
+<div class="card"><b>“Does the DPDP Act apply to my small business, and when?”</b><p class="muted">A chatbot answers from memory. A search engine returns pages. Neither explains the law in plain words and shows the page it comes from.</p></div>
 </div>
 </section>
 
@@ -456,7 +494,7 @@ svg{width:100%;height:auto}
 <p class="kicker">What is new</p>
 <h2>Claims you can check, status you can trust</h2>
 <div class="cols3">
-<div class="card"><b>Evidence at claim level</b><p>${claims} claims, each with verbatim quotes and a PDF page. A script found <b>${verification.supported}/${verification.totalRefs}</b> quotes on the stated page.</p></div>
+<div class="card"><b>Evidence at claim level</b><p>For our reviewed example (DPDP): ${claims} claims, each with verbatim quotes and a PDF page. A script found ${verification.supported} of ${verification.totalRefs} quotes on the stated page.</p></div>
 <div class="card"><b>Status is computed</b><p>Dates come from the Gazette; code works out “in force / starts in 200 days”. The model cannot write status.</p></div>
 <div class="card"><b>Answer, then check</b><p>Scoped retrieval, an answer with exact quotes that code confirms, then a second AI pass. If unsupported, Anvaya says so.</p></div>
 </div>
@@ -466,15 +504,15 @@ svg{width:100%;height:auto}
 <section>
 <p class="kicker">The agents</p>
 <h2>A fixed pipeline with scoped roles</h2>
-${diagram(1120)}
+${slideDiagram}
 </section>
 
 <section>
 <p class="kicker">Demo</p>
 <h2>From question to cited, checked answer</h2>
-<div style="display:grid;grid-template-columns:1.1fr 1.3fr;gap:26px;align-items:start">
-<div><img src="${img("06-ask-live")}" alt="Live answer with cited passage and check result"><p class="small muted">A live question: qualified answer, the exact passage, and the second-pass check result.</p></div>
-<div><img src="${img("19-rings")}" alt="Scorecard rings on the DPDP page" style="object-position:left top"><p class="small muted">The scorecard on the same page: score, 90% range, reason on hover; click for the UK and Canada comparison.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1.25fr;gap:26px;align-items:start">
+<div><img src="${img("22-slide-answer")}" alt="Live answer with cited passage and check result"><p class="small muted">A live question: qualified answer, the exact passage, and the check result.</p></div>
+<div><img src="${img("23-slide-rings")}" alt="Scorecard rings with the reason shown on hover"><p class="small muted">The scorecard on the same page: score, 90% range, the reason on hover; click to compare with UK and Canadian laws.</p></div>
 </div>
 </section>
 
@@ -527,7 +565,7 @@ ${diagram(1120)}
 <h2>Honest edges</h2>
 <div class="cols">
 <div><h3>Limits</h3><ul>
-<li>One curated law; other bills provisional</li>
+<li>One law reviewed claim by claim; ${verifs.length} more are engine-verified only</li>
 <li>Keyword retrieval misses paraphrases</li>
 <li>Date counting and a reported shortening are unconfirmed</li>
 <li>Scorecard measures design, not outcomes</li>
@@ -545,7 +583,8 @@ ${diagram(1120)}
 <section data-background-color="#102e3c">
 <p class="kicker" style="color:#f0c18b">Try it</p>
 <h2 style="color:#fff">Ask it something</h2>
-<p style="color:#dbe7e1;font-size:.8em"><code>${CLONE.replace(/&/g, "&amp;")}</code></p>
+<p style="color:#fff;font-size:.95em;margin-bottom:.4em"><b>GitHub (public):</b> <a href="${REPO}" style="color:#f0c18b">${REPO}</a></p>
+<p style="color:#dbe7e1;font-size:.7em;line-height:1.7"><code>git clone ${REPO}.git</code><br><code>cd anvaya &amp;&amp; cp .env.example .env</code><br><code>npm install &amp;&amp; npm run setup &amp;&amp; npm run dev</code></p>
 <p style="color:#dbe7e1">Then open <code>http://127.0.0.1:3000</code> and try: <em>“Are my customers’ data rights already in force?”</em></p>
 <p class="small" style="color:#a9c1b7;margin-top:1.4em">Anvaya is an independent student project, not an official service and not legal advice. Slides built with reveal.js (MIT).</p>
 </section>

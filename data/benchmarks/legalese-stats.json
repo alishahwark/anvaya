@@ -1,0 +1,122 @@
+{
+ "measuredOn": "2026-10-26",
+ "method": "Flesch-Kincaid grade, simple syllable counter; proxy for reading difficulty, not a comprehension test",
+ "documents": 17,
+ "legal": {
+  "medianWordsPerSentence": 42.91133004926108,
+  "medianFk": 21.390051941574352,
+  "medianArchaicPer1000": 2.1573421544656983,
+  "medianDelegatingPer1000": 1.7219607392951441,
+  "min": 13.851680093256437,
+  "max": 28.3624989894648
+ },
+ "anvayaBriefs": {
+  "n": 22,
+  "medianWordsPerSentence": 18.727564102564102,
+  "medianFk": 14.263300648897491
+ },
+ "perDocument": [
+  {
+   "title": "Digital Personal Data Protection Act, 2023",
+   "words": 10002,
+   "wordsPerSentence": 41.8,
+   "fk": 21.1
+  },
+  {
+   "title": "THE BHARATIYA NYAYA  SANHITA, 2023",
+   "words": 66445,
+   "wordsPerSentence": 31,
+   "fk": 15.2
+  },
+  {
+   "title": "THE JAN VISHWAS (AMENDMENT OF PROVISIONS) BILL, 2022",
+   "words": 20515,
+   "wordsPerSentence": 47.3,
+   "fk": 22.4
+  },
+  {
+   "title": "THE JAN VISHWAS (AMENDMENT OF PROVISIONS) BILL, 2025",
+   "words": 22385,
+   "wordsPerSentence": 27.1,
+   "fk": 13.9
+  },
+  {
+   "title": "THE BHARATIYA NYAYA SANHITA, 2023",
+   "words": 66314,
+   "wordsPerSentence": 33.1,
+   "fk": 16
+  },
+  {
+   "title": "THE COMPETITION (AMENDMENT) BILL, 2022",
+   "words": 9569,
+   "wordsPerSentence": 60.2,
+   "fk": 28.4
+  },
+  {
+   "title": "THE INSOLVENCY AND BANKRUPTCY CODE (AMENDMENT) BILL, 2026",
+   "words": 16205,
+   "wordsPerSentence": 56.5,
+   "fk": 27
+  },
+  {
+   "title": "THE INCOME-TAX BILL, 2025",
+   "words": 265934,
+   "wordsPerSentence": 48.7,
+   "fk": 22.8
+  },
+  {
+   "title": "THE PROMOTION AND REGULATION OF ONLINE GAMING BILL, 2025",
+   "words": 4718,
+   "wordsPerSentence": 37.4,
+   "fk": 20.6
+  },
+  {
+   "title": "THE TELECOMMUNICATIONS BILL, 2023",
+   "words": 11548,
+   "wordsPerSentence": 32.2,
+   "fk": 19.2
+  },
+  {
+   "title": "The Consumer Protection Bill, 2019",
+   "words": 20859,
+   "wordsPerSentence": 46.5,
+   "fk": 22.6
+  },
+  {
+   "title": "THE CORPORATE LAWS (AMENDMENT) BILL, 2026",
+   "words": 19821,
+   "wordsPerSentence": 50.1,
+   "fk": 23.5
+  },
+  {
+   "title": "Digital Personal Data Protection Rules, 2025 (draft)",
+   "words": 9595,
+   "wordsPerSentence": 42.6,
+   "fk": 21.1
+  },
+  {
+   "title": "THE INDIAN STATISTICAL INSTITUTE BILL, 2026",
+   "words": 8711,
+   "wordsPerSentence": 42.9,
+   "fk": 21.4
+  },
+  {
+   "title": "THE NATIONAL SPORTS GOVERNANCE BILL, 2025",
+   "words": 8382,
+   "wordsPerSentence": 40.1,
+   "fk": 21.2
+  },
+  {
+   "title": "THE SECURITIES MARKETS CODE, 2025",
+   "words": 35387,
+   "wordsPerSentence": 48.3,
+   "fk": 23.7
+  },
+  {
+   "title": "THE WAQF (AMENDMENT) BILL, 2025",
+   "words": 6037,
+   "wordsPerSentence": 57.5,
+   "fk": 25.8
+  }
+ ]
+}

@@ -1,8 +1,8 @@
 # Anvaya (अन्वय)
 
-**Understand the policies shaping India.** Anvaya is an independent, evidence-first policy research assistant. It finds official documents, explains them in plain language, and shows the exact passage behind every claim. It is a student project for Yale SOM MGT 409 and is **not** an official government service or legal advice.
+**Understand the policies shaping India.** Anvaya is an independent, evidence-first policy research assistant. **Why it exists:** Indian laws and policy documents are public but written in dense, archaic legal language that most citizens cannot read. Anvaya tries to make them clear to the people they affect, while keeping the official text one click away so every explanation can be checked. It finds official documents, explains them in plain language, and shows the exact passage behind every claim. It is a student project for Yale SOM MGT 409 and is **not** an official government service or legal advice.
 
-Flagship: India's **Digital Personal Data Protection Act, 2023**, with its staged commencement (13 Nov 2025, 13 Nov 2026, 13 May 2027), Rules, corrigendum and October 2026 Removal of Difficulties Order. The register also holds 22 bills and Acts that Anvaya's verification engine checked against Parliament's record, India Code and the Gazette, each with a design scorecard compared with UK and Canadian statutes.
+Worked example reviewed in depth: India's **Digital Personal Data Protection Act, 2023**, with its staged commencement (13 Nov 2025, 13 Nov 2026, 13 May 2027), Rules, corrigendum and October 2026 Removal of Difficulties Order. The register also holds 22 bills and Acts that Anvaya's verification engine checked against Parliament's record, India Code and the Gazette, each with a design scorecard compared with UK and Canadian statutes.
 
 ## Run it (about 5 minutes)
 
