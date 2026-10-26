@@ -43,8 +43,7 @@
     "next.config.ts",
     "scripts/**/*.ts",
     "tests/**/*.ts",
-    "types/**/*.d.ts",
-    ".next-budget/types/**/*.ts"
+    "types/**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
