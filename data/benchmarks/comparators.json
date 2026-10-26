@@ -1,0 +1,2216 @@
+{
+ "uk-dpa-2018": {
+  "topic": "data-protection",
+  "country": "United Kingdom",
+  "title": "Data Protection Act 2018",
+  "year": 2018,
+  "url": "https://www.legislation.gov.uk/ukpga/2018/12/enacted/data.xml",
+  "sha256": "8c9f6c8867fd9a995a65f08aedcc212d029619e927de97f2f3e4aa8b7499b037",
+  "fetchedAt": "2026-10-26T00:42:15.170Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 3713,
+  "words": 128979,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 53.92377325544662,
+    "lo": 39.9741822848009,
+    "hi": 67.42360725429172,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.94529262086514
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.13318284424379231
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 76.06382978723406,
+    "lo": 67.04487496995125,
+    "hi": 84.03331804672256,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.05319148936170213
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 1
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 80.53047404063204,
+    "lo": 71.15003200031195,
+    "hi": 88.64879779806014,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.22121896162528218
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 100,
+    "lo": 99.99999999999999,
+    "hi": 100.00000000000003,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "ca-pipeda": {
+  "topic": "data-protection",
+  "country": "Canada",
+  "title": "Personal Information Protection and Electronic Documents Act",
+  "year": 2000,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/FullText.html",
+  "sha256": "3d570b71dcafd233ba9383e944e41991399fd84f0c3b06129350150b10291db5",
+  "fetchedAt": "2026-10-26T00:42:15.854Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 890,
+  "words": 18724,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 53.544996789564394,
+    "lo": 38.07179534630327,
+    "hi": 69.18455461867627,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9527896995708155
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.11811023622047244
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 78.33333333333333,
+    "lo": 69.33119651228577,
+    "hi": 82.31064789857557,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 1
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0.5
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 62.86089238845145,
+    "lo": 52.90130728228929,
+    "hi": 72.65268863434429,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.18110236220472442
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0.3333333333333333
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 50,
+    "lo": 37.457719006725995,
+    "hi": 62.12140422471162,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 0
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "uk-cra-2015": {
+  "topic": "consumer",
+  "country": "United Kingdom",
+  "title": "Consumer Rights Act 2015",
+  "year": 2015,
+  "url": "https://www.legislation.gov.uk/ukpga/2015/15/enacted/data.xml",
+  "sha256": "1c079a362e58b43b62913ea78380abef468cfda2ea3e18a36987f5dd50dbf509",
+  "fetchedAt": "2026-10-26T00:42:16.260Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 1701,
+  "words": 57412,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 52.73999605755964,
+    "lo": 36.89695389974619,
+    "hi": 68.40220452312934,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9649122807017544
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.0898876404494382
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 75.33333333333333,
+    "lo": 67.22301388564885,
+    "hi": 81.71572881346519,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.18333333333333332
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 72.00374531835206,
+    "lo": 63.773840323392065,
+    "hi": 80.15458443486362,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.21348314606741572
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 50,
+    "lo": 36.957255974182765,
+    "hi": 61.97871204955769,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 0
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ "ca-cpsa": {
+  "topic": "consumer",
+  "country": "Canada",
+  "title": "Canada Consumer Product Safety Act",
+  "year": 2010,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/C-1.68/FullText.html",
+  "sha256": "986cacb7eb991b7160e0620cd8b1ad01eb7bb9973bf2b2c997803fe6e4b000c4",
+  "fetchedAt": "2026-10-26T00:42:16.608Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 605,
+  "words": 12789,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 54.266304347826086,
+    "lo": 38.10885289058415,
+    "hi": 69.69533517026309,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9728260869565217
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.1125
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 45.37414965986394,
+    "lo": 36.97561565259746,
+    "hi": 53.62722029914938,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.10204081632653061
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 52.1875,
+    "lo": 40.53005941593797,
+    "hi": 64.06819573911926,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.0875
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 75,
+    "lo": 63.56838424797123,
+    "hi": 85.889554137375,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ "ca-telecom": {
+  "topic": "telecom",
+  "country": "Canada",
+  "title": "Telecommunications Act",
+  "year": 1993,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/T-3.4/FullText.html",
+  "sha256": "ab680acf162c50b91d0f5cd52915d17b10acae88feef3619ac6a0f5ec02fa843",
+  "fetchedAt": "2026-10-26T00:42:19.119Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 1290,
+  "words": 28413,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 51.072184823488506,
+    "lo": 34.98093114878718,
+    "hi": 66.76894577613164,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9522613065326633
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.06918238993710692
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 74.34959349593497,
+    "lo": 66.54695963524452,
+    "hi": 81.40699638443921,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.13414634146341464
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 61.63522012578616,
+    "lo": 51.01767835342464,
+    "hi": 71.1962783788684,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 0.3333333333333333
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.1320754716981132
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 75,
+    "lo": 63.656705530707725,
+    "hi": 85.62074238100325,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "ca-radiocom": {
+  "topic": "telecom",
+  "country": "Canada",
+  "title": "Radiocommunication Act",
+  "year": 1985,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/R-2/FullText.html",
+  "sha256": "6139f0dc1ad98b0acc7e7f8238f23e344d4ee832df44caa07c344ee38a090600",
+  "fetchedAt": "2026-10-26T00:42:19.318Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 454,
+  "words": 10981,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 47.8125,
+    "lo": 32.59227587574243,
+    "hi": 62.990141179299364,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.925
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.03125
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 51.34751773049645,
+    "lo": 41.71065105708295,
+    "hi": 60.1020313520902,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 0
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.23404255319148937
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 52.34375,
+    "lo": 43.30614048896025,
+    "hi": 61.28557909642536,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 0.3333333333333333
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.09375
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 50,
+    "lo": 36.11554561335939,
+    "hi": 62.28342549598999,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 0
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "uk-gambling-2005": {
+  "topic": "gambling",
+  "country": "United Kingdom",
+  "title": "Gambling Act 2005",
+  "year": 2005,
+  "url": "https://www.legislation.gov.uk/ukpga/2005/19/enacted/data.xml",
+  "sha256": "67bfd9f47c3be0882950f47b1439be99bbd76a290e4eea31459938e5389bef8c",
+  "fetchedAt": "2026-10-26T00:42:19.727Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 2401,
+  "words": 89714,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 47.20198135228241,
+    "lo": 32.561355714580706,
+    "hi": 63.284932841576634,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.8957887223411849
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.04825090470446321
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 74.89795918367348,
+    "lo": 66.65882833295696,
+    "hi": 82.48245508395947,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.24489795918367346
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 1
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 79.49336550060313,
+    "lo": 70.16576664004228,
+    "hi": 88.3116159659959,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.17973462002412546
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 100,
+    "lo": 99.99999999999999,
+    "hi": 100.00000000000003,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "uk-ca-1998": {
+  "topic": "competition",
+  "country": "United Kingdom",
+  "title": "Competition Act 1998",
+  "year": 1998,
+  "url": "https://www.legislation.gov.uk/ukpga/1998/41/enacted/data.xml",
+  "sha256": "b73411385ff3a5dd34db3f4ed7cb9290437c8f41b58ede680c669a4805705b37",
+  "fetchedAt": "2026-10-26T00:42:19.993Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 1549,
+  "words": 51228,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 46.13760658629815,
+    "lo": 29.27241841948172,
+    "hi": 62.476376013898374,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.911578947368421
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.0111731843575419
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 70.57971014492755,
+    "lo": 62.67291039388827,
+    "hi": 77.63964210992862,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.1956521739130435
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0.5
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 78.63128491620111,
+    "lo": 68.55320628701742,
+    "hi": 87.43093093771233,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.1452513966480447
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 100,
+    "lo": 99.99999999999999,
+    "hi": 100.00000000000003,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "ca-competition": {
+  "topic": "competition",
+  "country": "Canada",
+  "title": "Competition Act",
+  "year": 1985,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/C-34/FullText.html",
+  "sha256": "8f73930df0bd070d522cce95c502c132ff8c240c7688bdd24be2291f27550713",
+  "fetchedAt": "2026-10-26T00:42:20.703Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 2280,
+  "words": 59474,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 52.403878893534724,
+    "lo": 37.20582294210534,
+    "hi": 68.16329060306516,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9724473257698542
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.07563025210084033
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 83.40350877192982,
+    "lo": 76.68492449182793,
+    "hi": 89.12491912866555,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.3368421052631579
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 77.52100840336135,
+    "lo": 67.2490084996301,
+    "hi": 86.83138858643753,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.10084033613445378
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 75,
+    "lo": 63.759647099560326,
+    "hi": 84.62144563003362,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "uk-ia-1986": {
+  "topic": "insolvency",
+  "country": "United Kingdom",
+  "title": "Insolvency Act 1986",
+  "year": 1986,
+  "url": "https://www.legislation.gov.uk/ukpga/1986/45/enacted/data.xml",
+  "sha256": "cfb6f68a2b6ea63dd0e276e57a1411ceacefb3fc7a9309c274dffd67c6cf3941",
+  "fetchedAt": "2026-10-26T00:42:21.158Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 2609,
+  "words": 116727,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 52.74689158153164,
+    "lo": 39.474984753975946,
+    "hi": 67.89938894610937,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.919672131147541
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.13526570048309178
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 85.58139534883722,
+    "lo": 78.77163972132813,
+    "hi": 91.6173336147513,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.27906976744186046
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 1
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 69.84702093397746,
+    "lo": 60.94751598181867,
+    "hi": 78.02048167476447,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.12721417069243157
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 75,
+    "lo": 63.224408915841,
+    "hi": 84.98250623300723,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "ca-bia": {
+  "topic": "insolvency",
+  "country": "Canada",
+  "title": "Bankruptcy and Insolvency Act",
+  "year": 1985,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/B-3/FullText.html",
+  "sha256": "de504723c2cc08728c4395c986ea9c1ada8c5a4c3e19c470b5f1549f9875ac1c",
+  "fetchedAt": "2026-10-26T00:42:22.385Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 3712,
+  "words": 101442,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 56.014879778270064,
+    "lo": 40.797071256894604,
+    "hi": 71.48236519295114,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9858889934148636
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.13440860215053763
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 61.523809523809526,
+    "lo": 55.46279354999807,
+    "hi": 67.89375371323793,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.24285714285714285
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0.5
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 68.9516129032258,
+    "lo": 58.95818947015845,
+    "hi": 78.17257783172124,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.0913978494623656
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 75,
+    "lo": 63.321905531781496,
+    "hi": 85.49835226840624,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 0
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "uk-cogsa-1992": {
+  "topic": "maritime",
+  "country": "United Kingdom",
+  "title": "Carriage of Goods by Sea Act 1992",
+  "year": 1992,
+  "url": "https://www.legislation.gov.uk/ukpga/1992/50/enacted/data.xml",
+  "sha256": "ddf04a39f90ce6fb254f39ffddc03ed8c63b9be72fa15143f5c1fa9a4fa0fffa",
+  "fetchedAt": "2026-10-26T00:42:22.417Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 33,
+  "words": 2059,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 90,
+    "lo": 77.87474139663944,
+    "hi": 100,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.8
+     },
+     {
+      "id": "deadline_share",
+      "value": null
+     },
+     {
+      "id": "fixed_commencement",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": null,
+    "lo": null,
+    "hi": null,
+    "status": "insufficient",
+    "available": 0,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": null
+     },
+     {
+      "id": "sanction_quantification",
+      "value": null
+     },
+     {
+      "id": "escalation_breadth",
+      "value": null
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": null
+     },
+     {
+      "id": "monitoring_powers",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": null,
+    "lo": null,
+    "hi": null,
+    "status": "insufficient",
+    "available": 0,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": null
+     },
+     {
+      "id": "qualified_obligations",
+      "value": null
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": null
+     },
+     {
+      "id": "exemption_provisions",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": null,
+    "lo": null,
+    "hi": null,
+    "status": "insufficient",
+    "available": 0,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": null
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": null
+     },
+     {
+      "id": "transparency_duties",
+      "value": null
+     },
+     {
+      "id": "consultation_requirement",
+      "value": null
+     }
+    ]
+   }
+  ]
+ },
+ "uk-cogsa-1971": {
+  "topic": "maritime",
+  "country": "United Kingdom",
+  "title": "Carriage of Goods by Sea Act 1971",
+  "year": 1971,
+  "url": "https://www.legislation.gov.uk/ukpga/1971/19/enacted/data.xml",
+  "sha256": "bd1b9f073a9f85b3b2d7fe488bf0ef51c2504c69700e773ff809d4c3c771f2a0",
+  "fetchedAt": "2026-10-26T00:42:22.457Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 74,
+  "words": 4411,
+  "instrument": "amending",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 32.93949158610813,
+    "lo": 20.165137048348953,
+    "hi": 47.954851167984735,
+    "status": "scored",
+    "available": 3,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9473684210526316
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.04081632653061224
+     },
+     {
+      "id": "fixed_commencement",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 25,
+    "lo": 18.07973484352995,
+    "hi": 31.386281662552772,
+    "status": "scored",
+    "available": 4,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 0
+     },
+     {
+      "id": "sanction_quantification",
+      "value": null
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.5
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 28.57142857142857,
+    "lo": 17.98758383438631,
+    "hi": 39.7552276532566,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 0
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.14285714285714285
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 0,
+    "lo": 0,
+    "hi": 0,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 0
+     },
+     {
+      "id": "transparency_duties",
+      "value": 0
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ "ca-mla": {
+  "topic": "maritime",
+  "country": "Canada",
+  "title": "Marine Liability Act",
+  "year": 2001,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/M-0.7/FullText.html",
+  "sha256": "a6e6cfdcbbb1f0c2f6acc1757565b578dff4b4a10b7796000feee54c6aa00834",
+  "fetchedAt": "2026-10-26T00:42:23.413Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 3100,
+  "words": 85780,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 50.44224068614312,
+    "lo": 31.899854442209108,
+    "hi": 66.35309054358031,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9703832752613241
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.038461538461538464
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 76.51515151515152,
+    "lo": 69.71941444897551,
+    "hi": 82.5827610061845,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.24242424242424243
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.8333333333333334
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 68.89991728701406,
+    "lo": 59.29427105607127,
+    "hi": 78.41337832826542,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.08933002481389578
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 50,
+    "lo": 37.90908346251281,
+    "hi": 63.02599344461252,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 0
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "uk-sra-2007": {
+  "topic": "statistics",
+  "country": "United Kingdom",
+  "title": "Statistics and Registration Service Act 2007",
+  "year": 2007,
+  "url": "https://www.legislation.gov.uk/ukpga/2007/18/enacted/data.xml",
+  "sha256": "34529d153b7a6d2a654522a7cd6ba349d4fd0dd53f711f0a8db430061be3c60c",
+  "fetchedAt": "2026-10-26T00:42:23.518Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 509,
+  "words": 16280,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 46.63677130044843,
+    "lo": 28.87367680708707,
+    "hi": 63.660897634087355,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9327354260089686
+     },
+     {
+      "id": "deadline_share",
+      "value": 0
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 50,
+    "lo": 39.25816079012689,
+    "hi": 61.832289527798636,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.3333333333333333
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.6666666666666666
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 35.049019607843135,
+    "lo": 25.7312101321296,
+    "hi": 44.914775263432475,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 0.3333333333333333
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.06862745098039216
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 50,
+    "lo": 37.60795438240736,
+    "hi": 63.074616410112796,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 0
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "ca-stats": {
+  "topic": "statistics",
+  "country": "Canada",
+  "title": "Statistics Act",
+  "year": 1985,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/S-19/FullText.html",
+  "sha256": "bd3d09330f5595a895135839f9b565c7b1882a40c45c0a3c11851acd14af6ca5",
+  "fetchedAt": "2026-10-26T00:42:23.659Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 290,
+  "words": 6677,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 53.272772523643596,
+    "lo": 37.89128019143817,
+    "hi": 68.91452911098158,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9634146341463414
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.10204081632653061
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 56.111111111111114,
+    "lo": 45.621446971610744,
+    "hi": 65.73151494159137,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.5555555555555556
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 0.5
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 34.35374149659864,
+    "lo": 24.518683256242245,
+    "hi": 44.782735506658575,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 0.3333333333333333
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.04081632653061224
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 0
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 50,
+    "lo": 36.42390504750047,
+    "hi": 62.68923754988658,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 0
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ "uk-fsma-2000": {
+  "topic": "securities",
+  "country": "United Kingdom",
+  "title": "Financial Services and Markets Act 2000",
+  "year": 2000,
+  "url": "https://www.legislation.gov.uk/ukpga/2000/8/enacted/data.xml",
+  "sha256": "7af3ae9aa203fd243ff5516b04ed1929633d87ed769b565039bb36256c23238d",
+  "fetchedAt": "2026-10-26T00:42:24.284Z",
+  "basis": "United Kingdom: as enacted",
+  "sentences": 3708,
+  "words": 128042,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 49.14110276570919,
+    "lo": 34.340923130271875,
+    "hi": 63.37364604212625,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9094724220623501
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.07334963325183375
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 70.25423728813558,
+    "lo": 63.19280575149022,
+    "hi": 77.03747681805014,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.2627118644067797
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 1
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 0.5
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 77.56723716381417,
+    "lo": 66.77985546405407,
+    "hi": 86.08667137069848,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.10268948655256724
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 75,
+    "lo": 63.65086018979505,
+    "hi": 85.2617079989324,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 0
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "ca-criminal-code": {
+  "topic": "criminal-law",
+  "country": "Canada",
+  "title": "Criminal Code",
+  "year": 1985,
+  "url": "https://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html",
+  "sha256": "bbda60c8950230fe9043c5bf90496bf6d7f9ab9e7ae36af2e227dfeb595a687e",
+  "fetchedAt": "2026-10-26T00:42:30.068Z",
+  "basis": "Canada: current consolidated text",
+  "sentences": 18016,
+  "words": 446779,
+  "instrument": "principal",
+  "dimensions": [
+   {
+    "id": "clarity",
+    "score": 52.49674562702128,
+    "lo": 36.845856063023646,
+    "hi": 69.39330528316775,
+    "status": "scored",
+    "available": 2,
+    "total": 3,
+    "indicators": [
+     {
+      "id": "delegation_share",
+      "value": 0.9848042080654588
+     },
+     {
+      "id": "deadline_share",
+      "value": 0.06513070447496677
+     },
+     {
+      "id": "fixed_commencement",
+      "value": null
+     }
+    ]
+   },
+   {
+    "id": "enforceability",
+    "score": 82.97819314641744,
+    "lo": 74.58232301361099,
+    "hi": 90.38574245705644,
+    "status": "scored",
+    "available": 5,
+    "total": 5,
+    "indicators": [
+     {
+      "id": "enforcer_designated",
+      "value": 1
+     },
+     {
+      "id": "sanction_quantification",
+      "value": 0.14890965732087227
+     },
+     {
+      "id": "escalation_breadth",
+      "value": 1
+     },
+     {
+      "id": "redress_and_appeal",
+      "value": 1
+     },
+     {
+      "id": "monitoring_powers",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "proportionality",
+    "score": 77.48116969428445,
+    "lo": 65.35021721201024,
+    "hi": 86.46640494566681,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "risk_tiering",
+      "value": 1
+     },
+     {
+      "id": "qualified_obligations",
+      "value": 0.09924678777137794
+     },
+     {
+      "id": "procedural_safeguards",
+      "value": 1
+     },
+     {
+      "id": "exemption_provisions",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "id": "accountability",
+    "score": 100,
+    "lo": 99.99999999999999,
+    "hi": 100.00000000000003,
+    "status": "scored",
+    "available": 4,
+    "total": 4,
+    "indicators": [
+     {
+      "id": "review_or_sunset",
+      "value": 1
+     },
+     {
+      "id": "oversight_of_delegation",
+      "value": 1
+     },
+     {
+      "id": "transparency_duties",
+      "value": 1
+     },
+     {
+      "id": "consultation_requirement",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ }
+}

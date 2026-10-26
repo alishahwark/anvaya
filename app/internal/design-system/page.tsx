@@ -1,0 +1,9 @@
+import { notFound } from "next/navigation";
+import { legislativeRecords } from "@/data/fixtures/legislative-records";
+import { AnimatedLegislativeTimeline } from "@/components/motion/AnimatedLegislativeTimeline";
+import { StakeholderNetwork } from "@/components/motion/StakeholderNetwork";
+
+export default function DesignSystemPage() {
+  if (process.env.NODE_ENV === "production" && process.env.ANVAYA_QA_ENABLED !== "true") notFound();
+  return <main className="min-h-screen bg-[#faf8f3] px-5 py-10 md:px-10"><div className="mx-auto max-w-7xl"><p className="eyebrow">Internal design system · Motion lab</p><h1 className="mt-3 text-5xl tracking-[-.05em] text-[#102e3c]">Anvaya motion lab</h1><p className="sans mt-4 max-w-2xl text-sm leading-6 text-[#60716c]">Live demonstrations of the same interactions used in the public product. Reduced-motion users receive direct controls and static content.</p><div className="mt-12 grid gap-4 md:grid-cols-3"><div className="rounded-2xl border border-[#d8ded5] bg-white p-5"><span className="eyebrow">01 · Scroll</span><h2 className="mt-3 text-xl">Scroll-linked narrative</h2><p className="sans mt-2 text-sm leading-6 text-[#60716c]">Uses native scroll progress and requestAnimationFrame cleanup.</p></div><div className="rounded-2xl border border-[#d8ded5] bg-white p-5"><span className="eyebrow">02 · SVG</span><h2 className="mt-3 text-xl">Stakeholder network</h2><p className="sans mt-2 text-sm leading-6 text-[#60716c]">Original SVG connectors with keyboard-selectable nodes.</p></div><div className="rounded-2xl border border-[#d8ded5] bg-white p-5"><span className="eyebrow">03 · Data</span><h2 className="mt-3 text-xl">Evidence ledger</h2><p className="sans mt-2 text-sm leading-6 text-[#60716c]">Counts are computed from the verified local record, not invented metrics.</p></div></div><AnimatedLegislativeTimeline record={legislativeRecords[0]} /><StakeholderNetwork /></div></main>;
+}

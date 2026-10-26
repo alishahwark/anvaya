@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export function AnvayaFooter() {
+  return <footer className="sans border-t border-[#d8ded5] bg-[#102e3c] text-[#d5e0d9]"><div className="home-container flex flex-col gap-8 py-12 md:flex-row md:items-end md:justify-between"><div><Link href="/" className="text-xl font-bold tracking-[-.05em] text-[#faf8f3]">anvaya<span className="text-[#d38b45]">.</span></Link><p className="mt-3 max-w-sm text-sm leading-6 text-[#a9c1b7]">Independent, citizen-first intelligence for Indian public policy.</p></div><div className="flex flex-wrap gap-x-6 gap-y-3 text-sm"><Link href="/explore" className="hover:text-white">Explore</Link><Link href="/policies" className="hover:text-white">Policy briefs</Link><Link href="/about" className="hover:text-white">About</Link></div></div><div className="home-container border-t border-[#37616a] py-5 text-xs text-[#a9c1b7]">Sources are identified on each research page. Anvaya is independent and not affiliated with the Government of India.</div></footer>;
+}

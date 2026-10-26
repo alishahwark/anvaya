@@ -1,0 +1,188 @@
+{
+  "data": [
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "September",
+      "state": "All India",
+      "index_al": "144.82",
+      "index_rl": "144.58",
+      "inflation_al": "6.3",
+      "inflation_rl": "5.98"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "August",
+      "state": "All India",
+      "index_al": "143.40",
+      "index_rl": "143.20",
+      "inflation_al": "5.18",
+      "inflation_rl": "4.83"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "July",
+      "state": "All India",
+      "index_al": "141.65",
+      "index_rl": "141.46",
+      "inflation_al": "4.68",
+      "inflation_rl": "4.27"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "June",
+      "state": "All India",
+      "index_al": "140.06",
+      "index_rl": "139.92",
+      "inflation_al": "4.46",
+      "inflation_rl": "4.13"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "May",
+      "state": "All India",
+      "index_al": "138.52",
+      "index_rl": "138.37",
+      "inflation_al": "4.08",
+      "inflation_rl": "3.71"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "April",
+      "state": "All India",
+      "index_al": "137.30",
+      "index_rl": "137.22",
+      "inflation_al": "3.39",
+      "inflation_rl": "3.11"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "March",
+      "state": "All India",
+      "index_al": "136.99",
+      "index_rl": "136.95",
+      "inflation_al": "3.18",
+      "inflation_rl": "2.92"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "February",
+      "state": "All India",
+      "index_al": "136.57",
+      "index_rl": "136.51",
+      "inflation_al": "2.57",
+      "inflation_rl": "2.37"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2026",
+      "month": "January",
+      "state": "All India",
+      "index_al": "137.07",
+      "index_rl": "136.90",
+      "inflation_al": "1.61",
+      "inflation_rl": "1.47"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "December",
+      "state": "All India",
+      "index_al": "137.12",
+      "index_rl": "137.03",
+      "inflation_al": "0.04",
+      "inflation_rl": "0.11"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "November",
+      "state": "All India",
+      "index_al": "137.40",
+      "index_rl": "137.30",
+      "inflation_al": "-0.66",
+      "inflation_rl": "-0.47"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "October",
+      "state": "All India",
+      "index_al": "136.40",
+      "index_rl": "136.50",
+      "inflation_al": "-1.06",
+      "inflation_rl": "-1.36"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "September",
+      "state": "All India",
+      "index_al": "136.23",
+      "index_rl": "136.42",
+      "inflation_al": "0.31",
+      "inflation_rl": "-0.07"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "August",
+      "state": "All India",
+      "index_al": "136.34",
+      "index_rl": "136.60",
+      "inflation_al": "1.26",
+      "inflation_rl": "1.07"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "July",
+      "state": "All India",
+      "index_al": "135.31",
+      "index_rl": "135.66",
+      "inflation_al": "1.01",
+      "inflation_rl": "0.77"
+    },
+    {
+      "indicator": "General Index",
+      "base_year": "2019",
+      "year": "2025",
+      "month": "June",
+      "state": "All India",
+      "index_al": "134.08",
+      "index_rl": "134.37",
+      "inflation_al": "1.73",
+      "inflation_rl": "1.42"
+    }
+  ],
+  "meta_data": {
+    "page": 1,
+    "totalRecords": 327,
+    "totalPages": 2,
+    "recordPerPage": 200
+  },
+  "msg": "Data fetched successfully",
+  "statusCode": true
+}

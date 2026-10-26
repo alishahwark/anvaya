@@ -1,0 +1,13 @@
+{
+  "note": "Sanitized real local smoke execution; no API key or user identity included.",
+  "timestamp": "2026-10-24T23:13:41.871Z",
+  "agent": "policy-interpreter",
+  "provider": "portkey",
+  "model": "gpt-6-luna",
+  "inputTokens": 113,
+  "cachedInputTokens": 0,
+  "outputTokens": 271,
+  "totalTokens": 384,
+  "durationMs": 2434,
+  "status": "success"
+}

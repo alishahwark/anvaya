@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+export function SectionPage({ eyebrow, title, children }: { eyebrow: string; title: string; children: React.ReactNode }) { return <><SiteHeader /><main className="mx-auto max-w-5xl px-5 py-12 md:px-8 md:py-16"><Link href="/" className="sans text-sm font-bold text-[#267c76]">← Back to Anvaya</Link><p className="eyebrow mt-14">{eyebrow}</p><h1 className="mt-4 text-5xl tracking-[-.05em] md:text-6xl">{title}</h1><div className="sans mt-8 max-w-4xl text-lg leading-8 text-[#60716c]">{children}</div></main></>; }

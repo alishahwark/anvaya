@@ -1,0 +1,23 @@
+{
+  "ranAt": "2026-10-26T00:03:25.623Z",
+  "asOf": "2026-10-26",
+  "model": "gpt-6-luna",
+  "questions": 10,
+  "passed": 10,
+  "answered": 8,
+  "abstained": 2,
+  "unavailable": 0,
+  "retrievalGoldPageHit": "6/8",
+  "citationGoldPageHit": "6/8",
+  "secondPassStatementsChecked": 22,
+  "secondPassStatementsFullySupported": 21,
+  "inputTokens": 43816,
+  "outputTokens": 10366,
+  "modelCalls": 18,
+  "latencyMs": {
+    "median": 12340,
+    "p90": 18764,
+    "max": 18764
+  },
+  "note": "Assertions q18, q11 and q17 were each widened once after reading a correct answer whose wording was a fair paraphrase (a first uncached run scored 23/25 on the stricter patterns; both misses were correct answers). Mechanical assertions only; not independent human review. Token counts are measured; no price is applied because the provider price for this model was not verified."
+}

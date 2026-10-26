@@ -1,0 +1,12 @@
+[
+  {"id":"h01","category":"retention","question":"Can a company keep my data after I withdraw my consent?","expect":"answer","mustMatch":["erase|cease|stop|unless|retain"],"goldPages":["act:7","act:8"]},
+  {"id":"h02","category":"remedies","question":"Who can I complain to if a company misuses my personal data?","expect":"answer","mustMatch":["Board|grievance"],"goldPages":["act:10","act:14"]},
+  {"id":"h03","category":"appeals","question":"Can I appeal a decision of the Data Protection Board?","expect":"answer","mustMatch":["Appellate Tribunal|Telecom Disputes|TDSAT"],"goldPages":["act:15"]},
+  {"id":"h04","category":"sdf","question":"What is a Significant Data Fiduciary required to do?","expect":"answer","mustMatch":["Data Protection Officer|auditor|audit|impact assessment"],"goldPages":["act:9","rules:29"]},
+  {"id":"h05","category":"scope","question":"Does the Act apply to personal data that I post publicly on social media myself?","expect":"answer","mustMatch":["not apply|does not apply|exempt|excluded"],"goldPages":["act:4"]},
+  {"id":"h06","category":"other-laws","question":"How does this law change the Right to Information Act?","expect":"answer","mustMatch":["personal information|8\\(1\\)\\(j\\)|section 8"],"goldPages":["act:20"]},
+  {"id":"h07","category":"commencement","question":"From when do the Rules on registering Consent Managers apply?","expect":"answer","mustMatch":["13 November 2026"],"goldPages":["rules:24","notification:2"]},
+  {"id":"h08","category":"enforcement","question":"Can the Government have a company's service blocked under this Act?","expect":"answer","mustMatch":["block","two or more|twice|repeated|more than one"],"goldPages":["act:17"]},
+  {"id":"h09","category":"unsupported","question":"What did the Supreme Court decide about the DPDP Act in 2026?","expect":"answer_or_abstain","mustMatch":["could not confirm|not (in|found|covered|address|contain)|no (information|passage|court)|does not (say|mention|address|contain)|do not (say|mention|address|contain)"],"goldPages":[]},
+  {"id":"h10","category":"wrong-policy","question":"What are the penalties under the Securities Markets Code?","expect":"abstain","mustMatch":[],"goldPages":[]}
+]

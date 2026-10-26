@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    ".next-claude/types/**/*.ts",
+    ".next/types/**/*.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "drizzle.config.ts",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "next-env.d.ts",
+    "next.config.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts",
+    "types/**/*.d.ts",
+    ".next-e2e/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "Lecture 07",
+    "mult_agent_hp",
+    "Homework 01",
+    "Homework 02",
+    "Homework 03",
+    "Homework 04",
+    "Homework 05",
+    "Lecture 02",
+    "Lecture 03",
+    "Lecture 04",
+    "Lecture 05",
+    "Lecture 06"
+  ]
+}

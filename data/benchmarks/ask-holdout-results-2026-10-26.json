@@ -1,0 +1,470 @@
+{
+  "summary": {
+    "ranAt": "2026-10-26T00:03:25.623Z",
+    "asOf": "2026-10-26",
+    "model": "gpt-6-luna",
+    "questions": 10,
+    "passed": 10,
+    "answered": 8,
+    "abstained": 2,
+    "unavailable": 0,
+    "retrievalGoldPageHit": "6/8",
+    "citationGoldPageHit": "6/8",
+    "secondPassStatementsChecked": 22,
+    "secondPassStatementsFullySupported": 21,
+    "inputTokens": 43816,
+    "outputTokens": 10366,
+    "modelCalls": 18,
+    "latencyMs": {
+      "median": 12340,
+      "p90": 18764,
+      "max": 18764
+    },
+    "note": "Assertions q18, q11 and q17 were each widened once after reading a correct answer whose wording was a fair paraphrase (a first uncached run scored 23/25 on the stricter patterns; both misses were correct answers). Mechanical assertions only; not independent human review. Token counts are measured; no price is applied because the provider price for this model was not verified."
+  },
+  "results": [
+    {
+      "id": "h01",
+      "category": "retention",
+      "question": "Can a company keep my data after I withdraw my consent?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Not categorically. For consent given before the Act commenced, the text allows processing only until consent is withdrawn; storage counts as processing. Whether the company may retain the data after withdrawal on another basis is not settled here.",
+      "details": [
+        "As of 26 October 2026, the Act’s main duties and rights start on 13 May 2027."
+      ],
+      "uncertainty": "The retrieved text does not settle whether the company may retain the data after withdrawal under a separate legal basis.",
+      "citations": [
+        "Act No. 22 of 2023, p. 4",
+        "Act No. 22 of 2023, p. 3"
+      ],
+      "retrieved": [
+        "act:p2:1",
+        "act:p3:1",
+        "act:p9:1",
+        "note:duty.notice-existing",
+        "note:duty.notice",
+        "note:cm.role",
+        "rules:p33:3",
+        "act:p14:2"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 2,
+        "supported": 2,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 1
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 4285,
+        "outputTokens": 1317,
+        "durationMs": 14576
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": false,
+      "goldCited": false
+    },
+    {
+      "id": "h02",
+      "category": "remedies",
+      "question": "Who can I complain to if a company misuses my personal data?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "The Act does not mention “misuse” specifically; its text points to the company (as a Data Fiduciary) or the Data Protection Board as places to complain.",
+      "details": [
+        "However, the Act’s main duties and rights start on 13 May 2027, so this Act’s complaint route is not yet in force today."
+      ],
+      "uncertainty": "The retrieved passages do not explain how to file a complaint or what process applies.",
+      "citations": [
+        "Act No. 22 of 2023, p. 10",
+        "Act No. 22 of 2023, p. 3",
+        "Act No. 22 of 2023, p. 4"
+      ],
+      "retrieved": [
+        "act:p2:1",
+        "rules:p29:3",
+        "act:p7:3",
+        "note:duty.notice",
+        "note:right.duties",
+        "act:p10:3",
+        "note:scope.person-includes-business",
+        "rules:p34:2"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 2,
+        "supported": 1,
+        "unsupported": 0,
+        "notes": [
+          "Statement 1: The passages support complaints to a Data Fiduciary or the Board, but do not establish that the Act never mentions “misuse.”"
+        ],
+        "quoted": 1
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 4262,
+        "outputTokens": 1915,
+        "durationMs": 18764
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": true,
+      "goldCited": true
+    },
+    {
+      "id": "h03",
+      "category": "appeals",
+      "question": "Can I appeal a decision of the Data Protection Board?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Not yet under this Act: it provides an appeal against a Board order, but section 29 is not in force yet.",
+      "details": [
+        "Section 29 says anyone aggrieved by a Board order or direction may appeal to the Appellate Tribunal.",
+        "The appeal provision is scheduled to start on 13 May 2027. Today is 26 October 2026.",
+        "The Act sets a 60-day filing period, with an allowance for late appeals if the Tribunal finds sufficient cause."
+      ],
+      "uncertainty": "The retrieved text does not establish whether another appeal route is available before section 29 starts.",
+      "citations": [
+        "Act No. 22 of 2023, p. 15"
+      ],
+      "retrieved": [
+        "act:p9:1",
+        "act:p12:2",
+        "act:p14:1",
+        "board:p2:1",
+        "act:p16:1",
+        "rules:p39:4",
+        "act:p15:3",
+        "note:board.appeal"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 4,
+        "supported": 4,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 3
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 4930,
+        "outputTokens": 1158,
+        "durationMs": 13510
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": true,
+      "goldCited": true
+    },
+    {
+      "id": "h04",
+      "category": "sdf",
+      "question": "What is a Significant Data Fiduciary required to do?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "From 13 May 2027, a Significant Data Fiduciary must appoint an India-based Data Protection Officer and an independent auditor, carry out impact assessments and audits, and follow added safeguards. These main duties are not in force today.",
+      "details": [
+        "The Data Protection Officer must represent the Significant Data Fiduciary, be based in India, be responsible to its governing body, and serve as a grievance contact. The auditor must be independent and evaluate compliance.",
+        "The Rules require an impact assessment and audit every twelve months from notification as a Significant Data Fiduciary, and a report to the Board with significant observations.",
+        "The Rules also require due diligence on technical measures, including algorithmic software, and restrict transfers outside India of government-specified personal data and related traffic data."
+      ],
+      "uncertainty": null,
+      "citations": [
+        "Act No. 22 of 2023, p. 9",
+        "G.S.R. 846(E), p. 29",
+        "G.S.R. 846(E), p. 29"
+      ],
+      "retrieved": [
+        "act:p9:1",
+        "rules:p29:3",
+        "rules:p29:2",
+        "note:sdf.designation",
+        "note:sdf.rules",
+        "rules:p27:3",
+        "rules:p30:1",
+        "rules:p27:2"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 4,
+        "supported": 4,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 4
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 5903,
+        "outputTokens": 1496,
+        "durationMs": 16124
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": true,
+      "goldCited": true
+    },
+    {
+      "id": "h05",
+      "category": "scope",
+      "question": "Does the Act apply to personal data that I post publicly on social media myself?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "As of 26 October 2026, section 4 is not yet in force. From 13 May 2027, the Act says it does not apply to personal data you make publicly available yourself.",
+      "details": [
+        "The Act specifically names the Data Principal—the person the data relates to—as someone who may make the data publicly available. Its illustration describes a person publicly posting personal data on social media.",
+        "The status information says section 4 starts on 13 May 2027, so this exclusion is not in force today."
+      ],
+      "uncertainty": null,
+      "citations": [
+        "Act No. 22 of 2023, p. 4"
+      ],
+      "retrieved": [
+        "act:p3:2",
+        "act:p4:1",
+        "act:p7:3",
+        "rules:p36:2",
+        "note:duty.erasure-big-platforms",
+        "rules:p40:3",
+        "rules:p36:1",
+        "note:scope.territory"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 3,
+        "supported": 3,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 2
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 4493,
+        "outputTokens": 1589,
+        "durationMs": 12340
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": true,
+      "goldCited": true
+    },
+    {
+      "id": "h06",
+      "category": "other-laws",
+      "question": "How does this law change the Right to Information Act?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "It replaces the RTI Act’s section 8(1)(j) wording on personal information with: “information which relates to personal information.”",
+      "details": [
+        "This change has been in force since 13 November 2025."
+      ],
+      "uncertainty": "The retrieved passages state the replacement wording but do not explain how it affects particular RTI requests.",
+      "citations": [
+        "Act No. 22 of 2023, p. 20",
+        "Act No. 22 of 2023, p. 20"
+      ],
+      "retrieved": [
+        "act:p20:1",
+        "act:p18:1",
+        "act:p1:2",
+        "act:p1:1",
+        "act:p10:3",
+        "note:other.rti",
+        "act:p9:2",
+        "rules:p27:3"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 2,
+        "supported": 2,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 2
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 4491,
+        "outputTokens": 745,
+        "durationMs": 7450
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": true,
+      "goldCited": true
+    },
+    {
+      "id": "h07",
+      "category": "commencement",
+      "question": "From when do the Rules on registering Consent Managers apply?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "They start applying on 13 November 2026. As of 26 October 2026, they are not yet in force.",
+      "details": [
+        "The relevant provisions are Rule 4 and the First Schedule: Rule 4 covers applications to the Board by people who meet the Schedule’s conditions."
+      ],
+      "uncertainty": null,
+      "citations": [
+        "G.S.R. 846(E), p. 25"
+      ],
+      "retrieved": [
+        "act:p6:1",
+        "act:p2:1",
+        "rules:p25:1",
+        "note:cm.rule4",
+        "rules:p33:3",
+        "note:cm.registration",
+        "rules:p34:1",
+        "note:cm.role"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 2,
+        "supported": 2,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 1
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 3914,
+        "outputTokens": 563,
+        "durationMs": 6979
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": false,
+      "goldCited": false
+    },
+    {
+      "id": "h08",
+      "category": "enforcement",
+      "question": "Can the Government have a company's service blocked under this Act?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Not yet: section 37 is scheduled to start on 13 May 2027.",
+      "details": [
+        "Once section 37 starts, the Government may direct blocking on a written reference from the Board if the company is a Data Fiduciary and the Board has imposed monetary penalties on it in two or more instances. The direction must follow a hearing, be considered necessary or expedient in the public interest, and give written reasons.",
+        "The blocking can cover public access to information in a computer resource that enables the Data Fiduciary to offer goods or services to Data Principals in India."
+      ],
+      "uncertainty": null,
+      "citations": [
+        "Act No. 22 of 2023, p. 17",
+        "Act No. 22 of 2023, p. 3"
+      ],
+      "retrieved": [
+        "rules:p30:1",
+        "act:p18:1",
+        "act:p19:3",
+        "act:p3:1",
+        "act:p17:2",
+        "note:enforce.blocking",
+        "note:scope.person-includes-business",
+        "act:p17:3"
+      ],
+      "verification": {
+        "method": "model_entailment_check",
+        "checked": 3,
+        "supported": 3,
+        "unsupported": 0,
+        "notes": [],
+        "quoted": 1
+      },
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 2,
+        "inputTokens": 4529,
+        "outputTokens": 1337,
+        "durationMs": 10986
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": false,
+      "goldRetrieved": true,
+      "goldCited": true
+    },
+    {
+      "id": "h09",
+      "category": "unsupported",
+      "question": "What did the Supreme Court decide about the DPDP Act in 2026?",
+      "expect": "answer_or_abstain",
+      "status": "abstained",
+      "answer": "I could not confirm this from the official documents Anvaya retrieved.",
+      "details": [],
+      "uncertainty": null,
+      "citations": [],
+      "retrieved": [
+        "act:p18:1",
+        "act:p1:2",
+        "act:p1:1",
+        "note:other.prevail",
+        "note:life.rod-order",
+        "rod:p2:1",
+        "act:p16:2",
+        "rod:p2:2"
+      ],
+      "verification": null,
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 1,
+        "inputTokens": 3696,
+        "outputTokens": 138,
+        "durationMs": 2201
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": true,
+      "goldRetrieved": null,
+      "goldCited": null
+    },
+    {
+      "id": "h10",
+      "category": "wrong-policy",
+      "question": "What are the penalties under the Securities Markets Code?",
+      "expect": "abstain",
+      "status": "abstained",
+      "answer": "I could not confirm this from the official documents Anvaya retrieved.",
+      "details": [],
+      "uncertainty": null,
+      "citations": [],
+      "retrieved": [
+        "act:p11:3",
+        "note:penalty.max",
+        "act:p17:1",
+        "act:p21:1",
+        "rules:p40:1",
+        "act:p14:2",
+        "rules:p40:4",
+        "act:p13:3"
+      ],
+      "verification": null,
+      "execution": {
+        "model": "gpt-6-luna",
+        "calls": 1,
+        "inputTokens": 3313,
+        "outputTokens": 108,
+        "durationMs": 2160
+      },
+      "pass": true,
+      "failures": [],
+      "abstained": true,
+      "goldRetrieved": null,
+      "goldCited": null
+    }
+  ]
+}

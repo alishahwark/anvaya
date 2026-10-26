@@ -1,0 +1,2 @@
+import type { Milestone } from "@/db/schema";
+export function MilestoneList({ milestones }: { milestones: Pick<Milestone, "label" | "date" | "detail">[] }) { return <ol className="sans space-y-4">{milestones.map((milestone) => <li key={milestone.label} className="rounded-xl border border-[#d8ded5] p-4"><strong>{milestone.label}</strong><span className="ml-2 text-sm text-[#60716c]">{milestone.date ?? "Open question"}</span><p className="mt-1 text-sm text-[#60716c]">{milestone.detail}</p></li>)}</ol>; }

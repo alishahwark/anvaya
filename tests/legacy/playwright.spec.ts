@@ -1,0 +1,2 @@
+import { test, expect } from "@playwright/test";
+test("home page names Anvaya and provides a real research path", async ({ page }) => { await page.goto("/"); await expect(page.getByRole("heading", { name: "Understand the policies shaping India." })).toBeVisible(); await expect(page.getByRole("heading", { name: "Status is a sequence, not a shortcut." })).toBeVisible(); await expect(page.getByRole("button", { name: "Ask Anvaya" })).toBeVisible(); });

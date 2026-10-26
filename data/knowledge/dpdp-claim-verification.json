@@ -1,0 +1,1087 @@
+{
+  "policy": "dpdp-act-2023",
+  "checkedAt": "2026-10-25T22:13:47.027Z",
+  "totalRefs": 154,
+  "supported": 154,
+  "failures": [],
+  "checks": [
+    {
+      "claimId": "life.assent",
+      "doc": "act",
+      "page": 1,
+      "section": "Title and Gazette header",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.assent",
+      "doc": "act",
+      "page": 1,
+      "section": "Title",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.staged-power",
+      "doc": "act",
+      "page": 1,
+      "section": "Section 1(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.notification-date",
+      "doc": "notification",
+      "page": 2,
+      "section": "Notification",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.phase-1",
+      "doc": "notification",
+      "page": 2,
+      "section": "Clause (a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.phase-2",
+      "doc": "notification",
+      "page": 2,
+      "section": "Clause (b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.phase-3",
+      "doc": "notification",
+      "page": 2,
+      "section": "Clause (c)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.phase-3",
+      "doc": "notification",
+      "page": 2,
+      "section": "Clause (c)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.board-established",
+      "doc": "board",
+      "page": 2,
+      "section": "Paragraph 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.board-established",
+      "doc": "board",
+      "page": 2,
+      "section": "Paragraph 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.board-established",
+      "doc": "board",
+      "page": 2,
+      "section": "Paragraph 2",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.draft-rules",
+      "doc": "rules",
+      "page": 24,
+      "section": "Preamble",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.draft-rules",
+      "doc": "rules",
+      "page": 24,
+      "section": "Preamble",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rules-made",
+      "doc": "rules",
+      "page": 24,
+      "section": "Preamble",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rules-made",
+      "doc": "rules",
+      "page": 24,
+      "section": "Preamble",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rules-schedule",
+      "doc": "rules",
+      "page": 24,
+      "section": "Rule 1(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rules-schedule",
+      "doc": "rules",
+      "page": 24,
+      "section": "Rule 1(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rules-schedule",
+      "doc": "rules",
+      "page": 24,
+      "section": "Rule 1(4)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.corrigendum",
+      "doc": "corrigendum",
+      "page": 1,
+      "section": "Corrigendum",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.corrigendum",
+      "doc": "corrigendum",
+      "page": 1,
+      "section": "Item (i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.corrigendum",
+      "doc": "corrigendum",
+      "page": 1,
+      "section": "Item (iv)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rod-order",
+      "doc": "rod",
+      "page": 3,
+      "section": "Paragraph 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rod-order",
+      "doc": "rod",
+      "page": 3,
+      "section": "Paragraph 2(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rod-order",
+      "doc": "rod",
+      "page": 3,
+      "section": "Paragraph 2(ii)",
+      "status": "supported"
+    },
+    {
+      "claimId": "life.rod-editorial",
+      "doc": "rod",
+      "page": 3,
+      "section": "Preamble",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.purpose",
+      "doc": "act",
+      "page": 1,
+      "section": "Long title",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.territory",
+      "doc": "act",
+      "page": 3,
+      "section": "Section 3(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.territory",
+      "doc": "act",
+      "page": 3,
+      "section": "Section 3(a)(ii)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.extraterritorial",
+      "doc": "act",
+      "page": 3,
+      "section": "Section 3(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.fiduciary",
+      "doc": "act",
+      "page": 2,
+      "section": "Section 2(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.person-includes-business",
+      "doc": "act",
+      "page": 3,
+      "section": "Section 2(s)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.principal",
+      "doc": "act",
+      "page": 2,
+      "section": "Section 2(j)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.principal",
+      "doc": "act",
+      "page": 2,
+      "section": "Section 2(j)(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.child-18",
+      "doc": "act",
+      "page": 2,
+      "section": "Section 2(f)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.personal-domestic",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 3(c)(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "scope.personal-domestic",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 3(c)(ii)(A)",
+      "status": "supported"
+    },
+    {
+      "claimId": "inference.smb-tasks",
+      "doc": "rules",
+      "page": 24,
+      "section": "Rule 3(b)(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "inference.smb-tasks",
+      "doc": "act",
+      "page": 5,
+      "section": "Section 6(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "inference.smb-tasks",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 6(1)(f)",
+      "status": "supported"
+    },
+    {
+      "claimId": "inference.smb-tasks",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 7(2)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.lawful-basis",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 4(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.lawful-basis",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 4(1)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 5(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 5(1)(iii)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice-existing",
+      "doc": "act",
+      "page": 4,
+      "section": "Section 5(2)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice-existing",
+      "doc": "act",
+      "page": 5,
+      "section": "Section 5(2)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice-rules",
+      "doc": "rules",
+      "page": 24,
+      "section": "Rule 3(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice-rules",
+      "doc": "rules",
+      "page": 24,
+      "section": "Rule 3(b)(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.notice-language",
+      "doc": "act",
+      "page": 5,
+      "section": "Section 5(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.consent-quality",
+      "doc": "act",
+      "page": 5,
+      "section": "Section 6(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.consent-quality",
+      "doc": "act",
+      "page": 5,
+      "section": "Section 6(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.consent-withdraw",
+      "doc": "act",
+      "page": 5,
+      "section": "Section 6(4)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.burden-of-proof",
+      "doc": "act",
+      "page": 6,
+      "section": "Section 6(10)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.legitimate-uses",
+      "doc": "act",
+      "page": 6,
+      "section": "Section 7(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.legitimate-uses",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 7(f)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.legitimate-uses",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 7(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.responsible",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.processor-contract",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.accuracy",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.security",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(5)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.security",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(4)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.security-rules",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 6(1)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.security-rules",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 6(1)(c)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.security-rules",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 6(1)(e)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.security-rules",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 6(1)(f)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.breach-act",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(6)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.breach-rules",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 7(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.breach-rules",
+      "doc": "rules",
+      "page": 26,
+      "section": "Rule 7(2)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 8(7)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 8(7)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.retention-logs",
+      "doc": "rules",
+      "page": 27,
+      "section": "Rule 8(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure-big-platforms",
+      "doc": "rules",
+      "page": 35,
+      "section": "Third Schedule, item 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure-big-platforms",
+      "doc": "rules",
+      "page": 35,
+      "section": "Third Schedule, item 2",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure-big-platforms",
+      "doc": "rules",
+      "page": 36,
+      "section": "Third Schedule, item 3",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure-big-platforms",
+      "doc": "rules",
+      "page": 35,
+      "section": "Third Schedule",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.erasure-big-platforms",
+      "doc": "rules",
+      "page": 27,
+      "section": "Rule 8(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.contact",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 8(9)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.contact",
+      "doc": "rules",
+      "page": 27,
+      "section": "Rule 9",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.grievance",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 8(10)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.grievance",
+      "doc": "rules",
+      "page": 30,
+      "section": "Rule 14(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.rights-channel",
+      "doc": "rules",
+      "page": 29,
+      "section": "Rule 14(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "duty.rights-channel",
+      "doc": "rules",
+      "page": 30,
+      "section": "Rule 14(1)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "children.consent",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 9(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "children.no-tracking",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 9(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "children.no-tracking",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 9(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "children.rules-diligence",
+      "doc": "rules",
+      "page": 27,
+      "section": "Rule 10(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "children.exemptions",
+      "doc": "rules",
+      "page": 29,
+      "section": "Rule 12",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.designation",
+      "doc": "act",
+      "page": 8,
+      "section": "Section 10(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.designation",
+      "doc": "act",
+      "page": 9,
+      "section": "Section 10(1)(a)–(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.duties",
+      "doc": "act",
+      "page": 9,
+      "section": "Section 10(2)(a)(ii)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.duties",
+      "doc": "act",
+      "page": 9,
+      "section": "Section 10(2)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.duties",
+      "doc": "act",
+      "page": 9,
+      "section": "Section 10(2)(c)(i)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.rules",
+      "doc": "rules",
+      "page": 29,
+      "section": "Rule 13(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.rules",
+      "doc": "rules",
+      "page": 29,
+      "section": "Rule 13(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "sdf.localisation",
+      "doc": "rules",
+      "page": 29,
+      "section": "Rule 13(4)",
+      "status": "supported"
+    },
+    {
+      "claimId": "transfer.act",
+      "doc": "act",
+      "page": 11,
+      "section": "Section 16(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "transfer.rules",
+      "doc": "rules",
+      "page": 30,
+      "section": "Rule 15",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.access",
+      "doc": "act",
+      "page": 9,
+      "section": "Section 11(1)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.access",
+      "doc": "act",
+      "page": 9,
+      "section": "Section 11(1)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.correct-erase",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 12(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.correct-erase",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 12(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.grievance",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 13(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.grievance",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 13(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.nominate",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 14(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.nominate",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 14(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.duties",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 15(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.duties",
+      "doc": "act",
+      "page": 10,
+      "section": "Section 15(d)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.duties",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 5",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.duties",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 5",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.rules-channel",
+      "doc": "rules",
+      "page": 30,
+      "section": "Rule 14(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "right.rules-channel",
+      "doc": "rules",
+      "page": 30,
+      "section": "Rule 14(4)",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.role",
+      "doc": "act",
+      "page": 2,
+      "section": "Section 2(g)",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.role",
+      "doc": "act",
+      "page": 6,
+      "section": "Section 6(7)",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.registration",
+      "doc": "act",
+      "page": 6,
+      "section": "Section 6(9)",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.rule4",
+      "doc": "rules",
+      "page": 25,
+      "section": "Rule 4(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.rule4",
+      "doc": "rules",
+      "page": 25,
+      "section": "Rule 4(5)",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.conditions",
+      "doc": "rules",
+      "page": 32,
+      "section": "First Schedule, Part A, item 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.conditions",
+      "doc": "rules",
+      "page": 32,
+      "section": "First Schedule, Part A, item 4",
+      "status": "supported"
+    },
+    {
+      "claimId": "cm.board-inquiry",
+      "doc": "act",
+      "page": 14,
+      "section": "Section 27(1)(d)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.startups",
+      "doc": "act",
+      "page": 12,
+      "section": "Section 17(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.startups",
+      "doc": "act",
+      "page": 12,
+      "section": "Section 17(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.state",
+      "doc": "act",
+      "page": 11,
+      "section": "Section 17(2)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.research",
+      "doc": "act",
+      "page": 12,
+      "section": "Section 17(2)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.legal-claims",
+      "doc": "act",
+      "page": 11,
+      "section": "Section 17(1)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.legal-claims",
+      "doc": "act",
+      "page": 11,
+      "section": "Section 17(1)(c)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.state-processing",
+      "doc": "act",
+      "page": 6,
+      "section": "Section 7(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "exempt.state-processing",
+      "doc": "act",
+      "page": 7,
+      "section": "Section 7(c)",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.role",
+      "doc": "act",
+      "page": 12,
+      "section": "Section 18(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.role",
+      "doc": "act",
+      "page": 14,
+      "section": "Section 27(1)(b)",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.digital",
+      "doc": "act",
+      "page": 14,
+      "section": "Section 28(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.mediation",
+      "doc": "act",
+      "page": 16,
+      "section": "Section 31",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.mediation",
+      "doc": "act",
+      "page": 16,
+      "section": "Section 32(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.appeal",
+      "doc": "act",
+      "page": 15,
+      "section": "Section 29(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "board.appeal",
+      "doc": "act",
+      "page": 2,
+      "section": "Section 2(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.factors",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 33(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.factors",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 33(2)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.factors",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 33(2)(e)",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.max",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.max",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 1",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.max",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 2",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.max",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, items 2–3",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.max",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 4",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.max",
+      "doc": "act",
+      "page": 21,
+      "section": "Schedule, item 7",
+      "status": "supported"
+    },
+    {
+      "claimId": "penalty.to-treasury",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 34",
+      "status": "supported"
+    },
+    {
+      "claimId": "enforce.blocking",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 37(1)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "enforce.blocking",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 37(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "enforce.government-info",
+      "doc": "act",
+      "page": 17,
+      "section": "Section 36",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.prevail",
+      "doc": "act",
+      "page": 18,
+      "section": "Section 38(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.prevail",
+      "doc": "act",
+      "page": 18,
+      "section": "Section 38(2)",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.rti",
+      "doc": "act",
+      "page": 20,
+      "section": "Section 44(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.rti",
+      "doc": "act",
+      "page": 20,
+      "section": "Section 44(3)",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.it-act",
+      "doc": "act",
+      "page": 20,
+      "section": "Section 44(2)(a)",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.rules-power",
+      "doc": "act",
+      "page": 18,
+      "section": "Section 40(1)",
+      "status": "supported"
+    },
+    {
+      "claimId": "other.rules-power",
+      "doc": "act",
+      "page": 19,
+      "section": "Section 43(1)",
+      "status": "supported"
+    }
+  ]
+}
