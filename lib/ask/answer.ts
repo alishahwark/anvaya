@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { OpenAI } from "openai";
 import { getAIConfig } from "@/lib/env";
+import { BUDGET_MESSAGE, budgetExhausted, recordTokens } from "@/lib/security/budget";
 import { recordAgentExecution } from "@/lib/agents/audit-log";
 import { claimMap, documentMap, evidenceUrl, getKnowledge, todayIso } from "@/lib/knowledge";
 import type { PolicyKnowledge } from "@/lib/knowledge";
@@ -49,12 +50,12 @@ export type AskResult = {
   cached?: boolean;
   /** Passage IDs given to the model, in rank order (for audit and retrieval metrics). */
   retrieved?: string[];
-  execution?: { model: string; calls: number; inputTokens: number; outputTokens: number; durationMs: number };
+  execution?: { model: string; calls: number; inputTokens: number; cachedInputTokens?: number; outputTokens: number; durationMs: number };
 };
 
 export type Statement = { text: string; passages: string[]; quotes?: string[] };
 type ModelAnswer = { canAnswer: boolean; answer: Statement; details: Statement[]; uncertainty: string | null };
-export type Usage = { input: number; output: number };
+export type Usage = { input: number; output: number; cached?: number };
 
 const cache = new Map<string, AskResult>();
 const MAX_PASSAGES = 8;
@@ -81,7 +82,7 @@ export function relevantQuote(passage: Pick<Passage, "id" | "text">, statements:
   const clean = passage.text.replace(/\s+/g, " ").trim();
   // Sentence-ish units; PDF text has odd spacing, so split on a full stop followed by a capital or section number.
   const units = clean.split(/(?<=[.;:])\s+(?=[A-Z(\d“"])/).filter((unit) => unit.length > 20);
-  if (units.length <= 1) return trimTo(clean, max);
+  if (units.length <= 1) return trimTo(dropPartialStart(clean), max);
   const wanted = new Set(tokenize(statements.join(" ")));
   let best = { index: 0, score: -1 };
   units.forEach((unit, index) => {
@@ -90,7 +91,12 @@ export function relevantQuote(passage: Pick<Passage, "id" | "text">, statements:
     if (score > best.score) best = { index, score };
   });
   const window = [units[best.index], units[best.index + 1]].filter(Boolean).join(" ");
-  return trimTo(window, max);
+  return trimTo(dropPartialStart(window), max);
+}
+
+/** Passages are cut at fixed sizes, so a chunk can begin mid-word ("cipal has given…"). Drop the fragment and mark the cut. */
+export function dropPartialStart(text: string): string {
+  return /^[a-z]/.test(text) ? `… ${text.replace(/^\S+\s*/, "")}` : text;
 }
 
 function trimTo(text: string, max: number): string {
@@ -255,6 +261,7 @@ export async function verifyStatements(client: OpenAI, model: string, corpus: Lo
   const response = await client.responses.create({ model, input: prompt, max_output_tokens: Math.max(900, 160 * statements.length) });
   usage.input += response.usage?.input_tokens ?? 0;
   usage.output += response.usage?.output_tokens ?? 0;
+  usage.cached = (usage.cached ?? 0) + ((response.usage as { input_tokens_details?: { cached_tokens?: number } } | undefined)?.input_tokens_details?.cached_tokens ?? 0);
   const parsed = parseJson(response.output_text);
   const results = Array.isArray(parsed?.results) ? (parsed.results as { n?: number; verdict?: string; reason?: string }[]) : null;
   if (!results) return null;
@@ -283,6 +290,7 @@ export async function callJson(client: OpenAI, model: string, prompt: string, us
     last = response;
     usage.input += response.usage?.input_tokens ?? 0;
     usage.output += response.usage?.output_tokens ?? 0;
+    usage.cached = (usage.cached ?? 0) + ((response.usage as { input_tokens_details?: { cached_tokens?: number } } | undefined)?.input_tokens_details?.cached_tokens ?? 0);
     const text = (response as { output_text?: string }).output_text ?? "";
     const parsed = (response as { status?: string }).status === "incomplete" ? null : parseJson(text);
     if (parsed && !("parseWarning" in parsed)) return { parsed, response, calls };
@@ -338,6 +346,8 @@ export async function answerWithCorpus(input: AskInput, corpus: LoadedCorpus, kn
   const cached = cache.get(cacheKey);
   if (cached) return { ...cached, cached: true };
 
+  if (budgetExhausted()) return unavailable(base, BUDGET_MESSAGE);
+
   const passages = selectPassages(knowledge, corpus, input.question);
   if (!passages.length) return { ...base, source: "live", status: "abstained", answer: ABSTAIN, details: [], uncertainty: "None of the retrieved passages relate to this question.", citations: [], verification: null };
 
@@ -349,7 +359,7 @@ export async function answerWithCorpus(input: AskInput, corpus: LoadedCorpus, kn
     const attempt = await callJson(client, config.model, answerPrompt(corpus, passages, input.question), usage, [2400, 5000]);
     calls += attempt.calls;
     const response = attempt.response;
-    await recordAgentExecution({ timestamp: new Date().toISOString(), agent: "ask-answer", provider: config.provider, model: config.model, inputTokens: usage.input, cachedInputTokens: null, outputTokens: usage.output, totalTokens: usage.input + usage.output, durationMs: Date.now() - started, status: attempt.parsed ? "success" : "error" });
+    await recordAgentExecution({ timestamp: new Date().toISOString(), agent: "ask-answer", provider: config.provider, model: config.model, inputTokens: usage.input, cachedInputTokens: usage.cached ?? null, outputTokens: usage.output, totalTokens: usage.input + usage.output, durationMs: Date.now() - started, status: attempt.parsed ? "success" : "error" });
 
     if (process.env.ANVAYA_DEBUG) console.log("RAW MODEL OUTPUT:", (response as { output_text?: string } | null)?.output_text, "\nRETRIEVED:", passages.map((p) => p.id).join(", "));
     const validIds = new Set(passages.map((passage) => passage.id));
@@ -412,7 +422,7 @@ export async function answerWithCorpus(input: AskInput, corpus: LoadedCorpus, kn
       verification,
       notice,
       retrieved: passages.map((passage) => passage.id),
-      execution: { model: config.model, calls, inputTokens: usage.input, outputTokens: usage.output, durationMs: Date.now() - started },
+      execution: { model: config.model, calls, inputTokens: usage.input, cachedInputTokens: usage.cached ?? 0, outputTokens: usage.output, durationMs: Date.now() - started },
     };
     cache.set(cacheKey, result);
     return result;
@@ -420,5 +430,7 @@ export async function answerWithCorpus(input: AskInput, corpus: LoadedCorpus, kn
     await recordAgentExecution({ timestamp: new Date().toISOString(), agent: "ask-answer", provider: config.provider, model: config.model, inputTokens: null, cachedInputTokens: null, outputTokens: null, totalTokens: null, durationMs: Date.now() - started, status: "error" });
     console.error("Anvaya ask failed", error instanceof Error ? error.message : error);
     return unavailable(base, "The AI service did not respond in time. The prepared answers and the official sources on this page still work.");
+  } finally {
+    recordTokens(usage.input + usage.output);
   }
 }

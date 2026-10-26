@@ -129,6 +129,11 @@ function Answer({ result, suggestions, onAsk }: { result: AskResult; suggestions
       {result.uncertainty ? <p className="a-small" style={{ marginTop: "1rem" }}><strong>What the text does not settle:</strong> {result.uncertainty}</p> : null}
       {result.notice ? <p className="a-answer__notice">{result.notice}</p> : null}
       <Evidence items={evidence} open label={evidence.length ? `Sources behind this answer · ${evidence.length}` : undefined} />
+      {result.execution ? (
+        <p className="a-answer__usage" aria-label="Model usage for this answer">
+          Usage: {result.execution.calls} model {result.execution.calls === 1 ? "call" : "calls"} · {result.execution.inputTokens.toLocaleString("en-US")} input tokens ({(result.execution.cachedInputTokens ?? 0).toLocaleString("en-US")} cached) · {result.execution.outputTokens.toLocaleString("en-US")} output tokens · {(result.execution.durationMs / 1000).toFixed(1)} s · {result.execution.model}
+        </p>
+      ) : null}
       <p className="a-answer__verify">
         {result.source === "baseline"
           ? "Prepared answer. The quoted wording was checked against the official PDFs; no AI was used."

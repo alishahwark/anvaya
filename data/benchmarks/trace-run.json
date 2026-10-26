@@ -1,0 +1,76 @@
+{
+ "ranAt": "2026-10-26T02:16:20.102Z",
+ "question": "Do I have to ask customers for permission before sending them promotional emails under this Act?",
+ "source": "live",
+ "status": "answered",
+ "wallMs": 23337,
+ "retrieved": [
+  "act:p18:1",
+  "act:p19:3",
+  "rules:p30:1",
+  "act:p4:3",
+  "act:p6:1",
+  "rules:p30:2",
+  "note:duty.notice-existing",
+  "act:p16:1"
+ ],
+ "answer": "Not yet as a current duty under this Act: its main duties start on 13 May 2027. The retrieved text does not settle whether promotional emails specifically require prior permission once those duties begin.",
+ "details": [
+  "The Act’s consent provisions are among the provisions scheduled to start on 13 May 2027.",
+  "The cited example concerns bill emails, not promotional emails; it says processing for that purpose must cease when the customer opts to receive bills only through the app."
+ ],
+ "uncertainty": "The retrieved passages do not establish whether the Act will require prior permission specifically for promotional emails, or address any requirements under other laws.",
+ "verification": {
+  "method": "model_entailment_check",
+  "checked": 3,
+  "supported": 1,
+  "unsupported": 0,
+  "notes": [
+   "Statement 1: The start date is supported, but the STATUS does not address whether promotional emails require prior permission.",
+   "Statement 2: Sections 6(1)–(8) and (10) start then, but section 6(9) starts on 13 November 2026."
+  ],
+  "quoted": 2
+ },
+ "citations": [
+  {
+   "label": "Act No. 22 of 2023, p. 6",
+   "page": 6,
+   "url": "https://www.meity.gov.in/static/uploads/2024/02/Digital-Personal-Data-Protection-Act-2023.pdf#page=6",
+   "quote": "The Data Principal may give, manage, review or withdraw her consent to the Data Fiduciary through a Consent Manager. … X shall itself cease, and shall cause Y to cease, the processing of the personal data of Z for emailing bills."
+  }
+ ],
+ "execution": {
+  "model": "gpt-6-luna",
+  "calls": 2,
+  "inputTokens": 4603,
+  "cachedInputTokens": 3225,
+  "outputTokens": 1062,
+  "durationMs": 22691
+ },
+ "logRows": [
+  {
+   "timestamp": "2026-10-26T02:16:05.467Z",
+   "agent": "ask-answer",
+   "provider": "portkey",
+   "model": "gpt-6-luna",
+   "inputTokens": 3228,
+   "cachedInputTokens": 3225,
+   "outputTokens": 746,
+   "totalTokens": 3974,
+   "durationMs": 8058,
+   "status": "success"
+  },
+  {
+   "timestamp": "2026-10-26T02:16:20.098Z",
+   "agent": "ask-verify",
+   "provider": "portkey",
+   "model": "gpt-6-luna",
+   "inputTokens": null,
+   "cachedInputTokens": null,
+   "outputTokens": null,
+   "totalTokens": null,
+   "durationMs": 14630,
+   "status": "success"
+  }
+ ]
+}

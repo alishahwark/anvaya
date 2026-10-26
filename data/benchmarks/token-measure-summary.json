@@ -1,0 +1,23 @@
+{
+ "ranAt": "2026-10-26T02:11:22.456Z",
+ "asOf": "2026-10-26",
+ "model": "gpt-6-luna",
+ "questions": 10,
+ "passed": 9,
+ "answered": 8,
+ "abstained": 2,
+ "unavailable": 0,
+ "retrievalGoldPageHit": "6/8",
+ "citationGoldPageHit": "4/8",
+ "secondPassStatementsChecked": 20,
+ "secondPassStatementsFullySupported": 20,
+ "inputTokens": 41595,
+ "outputTokens": 7584,
+ "modelCalls": 18,
+ "latencyMs": {
+  "median": 9320,
+  "p90": 14153,
+  "max": 14153
+ },
+ "note": "Token measurement only: the 10 held-out questions run fresh with the gateway cache bypassed. Pass/fail was not used for any claim; token counts, including cached input tokens (0), are measured. No price applied."
+}

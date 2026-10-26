@@ -76,7 +76,8 @@ svg{width:100%;height:auto}
 <div class="card"><b>Status is computed</b><p>Dates come from the Gazette; code works out “in force / starts in 200 days”. The model cannot write status.</p></div>
 <div class="card"><b>Answer, then check</b><p>Scoped retrieval, an answer with exact quotes that code confirms, then a second AI pass. If unsupported, Anvaya says so.</p></div>
 </div>
-<p class="muted small" style="margin-top:1.4em">Plus: ask for any bill by name or paste an official link; a verification engine checks Parliament’s register against the documents and India Code and shows every check. And a <b>design scorecard</b>: four rings with 90% ranges, benchmarked against UK and Canadian statutes. Things we could not confirm are listed on the page.</p>
+<p style="margin-top:1.2em;font-size:.82em"><b>Measured:</b> the same model with no documents passes 6 of 29 strict fact checks; Anvaya passes 25 of 29.</p>
+<p class="muted small" style="margin-top:.6em">Plus: ask for any bill by name or paste an official link; a verification engine checks Parliament’s register against the documents and India Code and shows every check. And a <b>design scorecard</b>: four rings with 90% ranges, benchmarked against UK and Canadian statutes. Things we could not confirm are listed on the page.</p>
 </section>
 
 <section>
@@ -121,7 +122,8 @@ svg{width:100%;height:auto}
 <div class="stat"><b>8 s</b><span>median answer time (90th percentile 12.9 s)</span></div>
 <div class="stat"><b>0</b><span>tokens for the 9 prepared answers; live answers are cached</span></div>
 </div>
-<p style="margin-top:1.2em">At 10,000 live questions a month: <b>43.4M</b> input and <b>9M</b> output tokens.</p>
+<p style="margin-top:1.2em">At 20 questions per user per month: <b>100 users</b> = 8.7M in / 1.8M out tokens; <b>10,000 users</b> = 867.4M in / 179.2M out.</p>
+<p class="small muted">Cached input: 0% on 10 different questions, 70% on a repeat. Per-user usage is an assumption.</p>
 <p class="small muted">Measured on <code>gpt-6-luna</code> via Portkey, gateway cache bypassed. A verified price for this model was not available, so no dollar figure is claimed.</p>
 </section>
 
@@ -135,6 +137,7 @@ svg{width:100%;height:auto}
 <tr><td>Poisoned passage inside a retrieved document</td><td>Treated as data; second-pass check</td><td class="n"><b>6/6</b> ignored, 0 cited</td></tr>
 <tr><td>Wrong-policy question</td><td>One corpus per policy</td><td class="n">abstained</td></tr>
 <tr><td>Fake quote or wrong page</td><td>Quote verifier</td><td class="n">rejected</td></tr>
+<tr><td>Runaway spend or loops</td><td>Fixed pipeline; caps; daily token budget</td><td class="n">paused at limit</td></tr>
 <tr><td>Leaked key</td><td>Server-only, scanned</td><td class="n">absent</td></tr>
 </table>
 <p class="small muted">Small samples written by us; not a penetration test.</p>
@@ -150,9 +153,9 @@ svg{width:100%;height:auto}
 <div class="stat"><b>22</b><span>register records verified against live official sources (5 corroborated, 0 failed)</span></div>
 </div>
 <ul style="margin-top:1em">
-<li>The four strict misses were correct answers worded unexpectedly (our reading, not independent review).</li>
-<li>One real retrieval miss: a paraphrase did not find the erasure passage. Not tuned away.</li>
-<li>119 unit + 38 browser tests pass on a production build. Scorecard: 18 comparator statutes scored; the effect ring is blank because no outcome data exists.</li>
+<li>Same model, no documents: 6/29 strict checks. Anvaya: 25/29. New bill to verified record: 10, 12, 14 s, no AI.</li>
+<li>Reading the DPDP Act: about 54 min (estimate); Anvaya’s summary: about 2 minutes. Retrieval misses paraphrases.</li>
+<li>126 unit + 38 browser tests pass on a production build. Scorecard: 18 comparator statutes scored; the effect ring is blank because no outcome data exists.</li>
 <li><b>Not measured:</b> user comprehension. No user study was run.</li>
 </ul>
 </section>

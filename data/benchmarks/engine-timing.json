@@ -1,0 +1,9 @@
+{
+  "measuredOn": "2026-10-26",
+  "method": "scripts/seed-register.ts run on three bills not yet in the register; time is the engine's own reported duration (search Parliament's register and India Code, fetch every official version, run all checks). No AI model is used.",
+  "runs": [
+    { "name": "The Boilers Bill, 2024", "result": "The Boilers Act, 2025 [verified], Act No. 12 of 2025", "seconds": 10 },
+    { "name": "The Bills of Lading Bill, 2024", "result": "THE BILLS OF LADING BILL, 2025 [verified], enacted as Act No. 18 of 2025", "seconds": 12 },
+    { "name": "The Disaster Management (Amendment) Bill, 2024", "result": "[verified], enacted as Act No. 10 of 2025", "seconds": 14 }
+  ]
+}

@@ -503,3 +503,4 @@
 .a-closing--photo .a-feature__credit { z-index: 2; }
 .a-btn--light { background: #fff; color: var(--a-navy); }
 .a-btn--light:hover { background: var(--a-mist); transform: translateY(-1px); }
+.a-answer__usage { margin: 0.9rem 0 0; padding: 0.55rem 0.85rem; border-radius: 12px; background: var(--a-mist); font: 500 0.78rem/1.45 var(--font-ui); color: var(--a-muted); font-variant-numeric: tabular-nums; }

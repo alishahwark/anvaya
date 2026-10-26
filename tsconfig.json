@@ -30,6 +30,7 @@
   },
   "include": [
     ".next-claude/types/**/*.ts",
+    ".next-e2e/types/**/*.ts",
     ".next/types/**/*.ts",
     "app/**/*.ts",
     "app/**/*.tsx",
@@ -43,7 +44,7 @@
     "scripts/**/*.ts",
     "tests/**/*.ts",
     "types/**/*.d.ts",
-    ".next-e2e/types/**/*.ts"
+    ".next-budget/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",

@@ -1,6 +1,7 @@
 import { OpenAI } from "openai";
 import { createDatabaseClient } from "@/lib/db/config";
 import { getAIConfig } from "@/lib/env";
+import { BUDGET_MESSAGE, budgetExhausted, recordTokens } from "@/lib/security/budget";
 import { recordAgentExecution } from "@/lib/agents/audit-log";
 import { callJson, confirmQuotes, relevantQuote, verifyStatements, cleanStatementText, type Statement, type Usage } from "@/lib/ask/answer";
 import { loadCorpus, type LoadedCorpus } from "@/lib/ask/corpus";
@@ -123,6 +124,8 @@ async function generate(slug: string): Promise<AnalysisOutcome> {
   const config = getAIConfig();
   if (!config) return { status: "unavailable", message: "The analysis is written by AI and the AI service is not connected right now. The original document and milestones are still available." };
 
+  if (budgetExhausted()) return { status: "unavailable", message: BUDGET_MESSAGE };
+
   const passages = selectForAnalysis(corpus);
   const byId = new Map(passages.map((passage) => [passage.id, passage]));
   const client = new OpenAI({ apiKey: config.apiKey, baseURL: config.baseURL, defaultHeaders: config.headers, timeout: 120000, maxRetries: 1 });
@@ -130,7 +133,7 @@ async function generate(slug: string): Promise<AnalysisOutcome> {
   const started = Date.now();
   try {
     const attempt = await callJson(client, config.model, promptFor(corpus, passages), usage, [4500, 8000]);
-    await recordAgentExecution({ timestamp: new Date().toISOString(), agent: "analysis-write", provider: config.provider, model: config.model, inputTokens: usage.input, cachedInputTokens: null, outputTokens: usage.output, totalTokens: usage.input + usage.output, durationMs: Date.now() - started, status: attempt.parsed ? "success" : "error" });
+    await recordAgentExecution({ timestamp: new Date().toISOString(), agent: "analysis-write", provider: config.provider, model: config.model, inputTokens: usage.input, cachedInputTokens: usage.cached ?? null, outputTokens: usage.output, totalTokens: usage.input + usage.output, durationMs: Date.now() - started, status: attempt.parsed ? "success" : "error" });
     const raw = attempt.parsed as Raw | null;
     const clean = (value: unknown): Statement | null => {
       if (!value || typeof value !== "object") return null;
@@ -184,5 +187,7 @@ async function generate(slug: string): Promise<AnalysisOutcome> {
   } catch (error) {
     console.error("Anvaya analysis failed", error instanceof Error ? error.message : error);
     return { status: "unavailable", message: "The AI service did not respond in time. Try again in a moment." };
+  } finally {
+    recordTokens(usage.input + usage.output);
   }
 }

@@ -51,7 +51,7 @@ Legal status is computed from Gazette dates by code. An AI model never decides w
 ## Verify it
 ```bash
 npm run typecheck
-npm test                      # 119 unit tests (evidence verifier, status, SSRF, retrieval hygiene, scorecard, estimators…)
+npm test                      # 126 unit tests (evidence verifier, status, SSRF, retrieval hygiene, scorecard, estimators…)
 npm run knowledge:verify      # checks all 154 quotes against the official PDFs
 RUN_LIVE_AI=1 npm run test:e2e  # 38 browser tests (6 call the live model) on a production build (port 3110); omit RUN_LIVE_AI to skip live-AI tests
 npm run benchmark:ask         # 25 questions against the live model (needs a key)
@@ -59,6 +59,10 @@ npm run benchmark:holdout     # 10 held-out questions
 npx tsx scripts/injection-test.ts   # indirect prompt-injection attacks
 npx tsx scripts/reverify-register.ts # re-fetch and re-verify every stored record against the live official sources
 npx tsx scripts/seed-register.ts "Name one" "Name two"  # add laws to the register by running the engine on a name
+npx tsx scripts/baseline-chatbot.ts   # same model, no documents, on the benchmark questions (the report's comparison)
+npx tsx scripts/trace-run.ts          # trace one live question step by step (tokens incl. cached, per stage)
+npx tsx scripts/legalese-stats.ts     # readability of the official texts vs Anvaya's summaries
+npx tsx scripts/cost-stats.ts         # corpus size and reading-time inputs
 npx tsx scripts/build-benchmarks.ts   # re-fetch and re-score the UK/Canada comparator statutes (network)
 npx tsx scripts/score-register.ts     # print every register scorecard
 npx tsx scripts/build-submission.ts # regenerates report.html and slides.html from the result files
@@ -70,6 +74,7 @@ npx tsx scripts/build-submission.ts # regenerates report.html and slides.html fr
 ## Configuration notes
 - Model: `gpt-6-luna` through Portkey (the course-approved model) unless `ANVAYA_MODEL` is set. The course workspace's own `AGENTS.md` mentions `gpt-5.6-luna`; the course page says `gpt-6-luna` only, so that is the default here.
 - Fetching is restricted to official hosts (Parliament, MeitY, India Code, eGazette, PIB) over HTTPS, with every redirect validated before it is requested.
+- Spending guard: live AI answers and new analyses pause once the day's tokens reach `ANVAYA_DAILY_TOKEN_BUDGET` (default 2,000,000; in-memory, resets on restart). Each live answer shows its own token usage. Other limits: 12 questions a minute per client, 600-character questions, output caps.
 - `/internal/qa` is disabled in production unless `ANVAYA_QA_ENABLED=true`.
 - Never commit `.env`. `.gitignore` excludes `.env*` (except `.env.example`) and live databases.
 
