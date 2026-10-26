@@ -1,1 +1,1 @@
-fresh clone timing pending
+from a fresh clone on the development machine, clone 1 s, <code>npm install</code> 5 s, <code>npm run setup</code> 1 s, first page served about 7 s later; a live AI answer worked with the key only in the <code>.env</code> one folder up, and all 119 unit tests passed in the clone. A slower connection will lengthen the install, but the whole procedure is far inside ten minutes.
